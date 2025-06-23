@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+.left,
+.right {
+  flex: 1; /* Each takes 12.5% of the width */
+  background-color: lightgray; /* Example color */
+  padding: 20px; /* Example padding */
+}
+
+.middle {
+  flex: 6; /* Takes 75% of the width */
+  background-color: white; /* Example color */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  background-color: lightgray;
+  font-family: 'Roboto', sans-serif;
+}

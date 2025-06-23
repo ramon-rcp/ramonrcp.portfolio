@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Portfolio.css"
+import "./global.css"
 
 export class Portfolio extends Component<{}, {}> {
     constructor(props: {}) {
@@ -11,17 +11,22 @@ export class Portfolio extends Component<{}, {}> {
             <div className="container">
                 <div className="left">Left</div>
                 <div className="middle">Middle</div>
-                <div className="right"> renderCoursework() </div>
+                <div className="right"> {this.renderCoursework()} </div>
             </div>
         );
     }
 
     renderCoursework = (): React.ReactElement => {
         return <div>
-            <h3>Coursework at UW</h3>
-            <ul>
-                <li><a href="http://courses.cs.washington.edu/courses/cse421/">CSE 421: Introduction to Algorithms</a></li>
-            </ul>
+            <h2>Coursework</h2>
+            <strong><ul>
+                <li><a href="https://courses.cs.washington.edu/courses/cse421/">CSE 421: Introduction to Algorithms</a></li>
+                <li><a href="https://courses.cs.washington.edu/courses/cse473/">CSE 473: Artificial Intelligence</a></li>
+                <li><a href="https://courses.cs.washington.edu/courses/cse403/">CSE 403: Software Engineering</a></li>
+                <li><a href="https://courses.cs.washington.edu/courses/cse332/">CSE 332: Data Structures and Parallelism</a></li>
+                <li><a href="https://courses.cs.washington.edu/courses/cse344/">CSE 344: Introduction to Data Management</a></li>
+                <li><a href="https://math.washington.edu/math300">Math 300: Mathematical Reasoning</a></li>
+            </ul></strong>
         </div>
     }
 }
