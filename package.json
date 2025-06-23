@@ -4,10 +4,10 @@
   "description": "CSE 331 Wedding",
   "main": "",
   "scripts": {
-    "build": "webpack --config src/webpack.config.js",
-    "lint": "comfy-tslint --no-mutation src/*.{ts,tsx}",
-    "test": "ts-mocha -p tsconfig.json src/**/*_test.{ts,tsx} --require ignore-styles",
-    "start": "webpack-dev-server --config src/webpack.config.js"
+    "build": "webpack --config docs/webpack.config.js",
+    "lint": "comfy-tslint --no-mutation docs/*.{ts,tsx}",
+    "test": "ts-mocha -p tsconfig.json docs/**/*_test.{ts,tsx} --require ignore-styles",
+    "start": "webpack-dev-server --config docs/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
