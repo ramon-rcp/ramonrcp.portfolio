@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .left,
+  .right {
+    flex: 1; /* Each takes 12.5% of the width */
+    background-color: lightgray; /* Example color */
+  }
+  
+  .middle {
+    flex: 6; /* Takes 75% of the width */
+    background-color: white; /* Example color */
+  }
