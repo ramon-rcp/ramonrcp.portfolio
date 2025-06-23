@@ -26,8 +26,19 @@ export class Portfolio extends Component<{}, {}> {
                 <li><a href="https://courses.cs.washington.edu/courses/cse403/">CSE 403: Software Engineering</a></li>
                 <li><a href="https://courses.cs.washington.edu/courses/cse332/">CSE 332: Data Structures and Parallelism</a></li>
                 <li><a href="https://courses.cs.washington.edu/courses/cse344/">CSE 344: Introduction to Data Management</a></li>
+                <li><a href="https://courses.cs.washington.edu/courses/cse369/">CSE 369: Introduction to Digital Design</a></li>
                 <li><a href="https://math.washington.edu/math300">Math 300: Mathematical Reasoning</a></li>
             </ul></strong>
         </div>
+    }
+
+    renderResume = (): React.ReactElement => {
+        return <iframe 
+            src="/path-to-your-pdf-file.pdf" 
+            title="PDF Viewer" 
+            width="100%" 
+            height="100%" 
+            style={{ border: "none" }}
+        ></iframe>
     }
 }
