@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./global.css"
+import { Home } from './Home';
 
 export class Portfolio extends Component<{}, {}> {
     constructor(props: {}) {
@@ -10,7 +11,7 @@ export class Portfolio extends Component<{}, {}> {
         return (
             <div className="container">
                 <div className="left">Left</div>
-                <div className="middle">Middle</div>
+                <div className="middle"><Home/></div>
                 <div className="right"> {this.renderCoursework()} </div>
             </div>
         );
