@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./global.css"
 import { Home } from './Home';
+import resume from './../public/RCP_resume.jpg';
 
 export class Portfolio extends Component<{}, {}> {
     constructor(props: {}) {
@@ -10,7 +11,7 @@ export class Portfolio extends Component<{}, {}> {
     render() {
         return (
             <div className="container">
-                <div className="left">Left</div>
+                <div className="left">{this.renderResume()}</div>
                 <div className="middle"><Home/></div>
                 <div className="right"> {this.renderCoursework()} </div>
             </div>
@@ -33,12 +34,6 @@ export class Portfolio extends Component<{}, {}> {
     }
 
     renderResume = (): React.ReactElement => {
-        return <iframe 
-            src="/path-to-your-pdf-file.pdf" 
-            title="PDF Viewer" 
-            width="100%" 
-            height="100%" 
-            style={{ border: "none" }}
-        ></iframe>
+        return <object data={resume} className='resume'/>
     }
 }

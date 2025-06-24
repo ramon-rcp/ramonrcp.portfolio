@@ -3,11 +3,20 @@
     height: 100vh; /* Full viewport height */
   }
   
-.left,
 .right {
-  flex: 1; /* Each takes 12.5% of the width */
+  flex: 2; /* Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
+}
+
+.left {
+  flex: 2; /* Takes 20% of the width */
+  background-color: lightgray; /* Example color */
+  padding: 20px; /* Example padding */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
 }
 
 .middle {
@@ -19,4 +28,8 @@
 body {
   background-color: lightgray;
   font-family: 'Roboto', sans-serif;
+}
+
+.resume {
+  max-width: 100%;
 }

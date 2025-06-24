@@ -51,7 +51,7 @@ const config = {
         ]
       },
       {
-        test: /\.(ico|png)$/i,
+        test: /\.(ico|png|pdf|jpg)$/i,
         use: ['file-loader'],
       },
     ]
@@ -64,7 +64,7 @@ const config = {
   },
 
   entry: {
-    main: './docs/index.tsx'
+    main: './src/index.tsx'
   },
 
   output: {
@@ -82,7 +82,7 @@ const config = {
       filename: 'index.html',
       title: info.TITLE,
       chunks: ['main'],
-      template: './docs/index.html',
+      template: './public/index.html',
       templateParameters: { TITLE: info.TITLE }
     }),
   ],
