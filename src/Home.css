@@ -57,3 +57,8 @@
     line-height: 1.6;
     color: #555;
   }
+
+  .resume {
+    width: 100%;
+    aspect-ratio: 7/5;
+  }

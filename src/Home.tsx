@@ -3,6 +3,12 @@ import "./global.css"
 import "./Home.css"
 import "./Contact.css"
 import { Projects } from './Projects';
+import resume from './../public/RCP_resume.pdf';
+
+type HomeProps = {
+    showResume: boolean;
+    hideResume: () => void;
+}
 
 type HomeState = {
     show: "about" | "projects" | "contact";
@@ -12,8 +18,8 @@ const aboutText: string[] = ["I am a Computer Engineering student at the Univers
 "I enjoy collaborating with cross-functional teams to deliver high-quality software that prioritizes user experience, performance, and accessibility. My academic journey has prepared me with technical and problem-solving skills, while my personal projects show my curiosity for facing complex challenges in inclusive technology.",
 "I’m eager to continue learning and growing in an environment that values innovation, collaboration, and making a social impact. Let’s connect if you share a passion for leveraging technology to make a difference!"]
 
-export class Home extends Component<{}, HomeState> {
-    constructor(props: {}) {
+export class Home extends Component<HomeProps, HomeState> {
+    constructor(props: HomeProps) {
         super(props);
         this.state = {
             show: "about"
@@ -35,6 +41,9 @@ export class Home extends Component<{}, HomeState> {
             default:
                 display = this.renderAbout();
         }
+        if (this.props.showResume) {
+            display = this.renderResume();
+        }
         return (
             <div className="home">
                 <header className="home-header">
@@ -43,7 +52,7 @@ export class Home extends Component<{}, HomeState> {
                     <nav>
                     <a href="#about" onClick={this.openAbout}>About</a>
                     <a href="#projects" onClick={this.openProjects}>Projects</a>
-                    <a href="#contact" onClick={this.openContact}>Contact</a>
+                    <a href="#contact" onClick={this.openContact}>Contacts and Platforms</a>
                     </nav>
                 </header>
                 {display}
@@ -74,15 +83,22 @@ export class Home extends Component<{}, HomeState> {
         </section>;
     }
 
+    renderResume = (): React.ReactElement => {
+        return <object data={resume} className='resume'/>
+    }
+
     openProjects = (): void => {
+        this.props.hideResume();
         this.setState({ show: "projects" });
     }
 
     openContact = (): void => {
+        this.props.hideResume();
         this.setState({ show: "contact" });
     }
 
     openAbout = (): void => {
+        this.props.hideResume();
         this.setState({ show: "about" });
     }
 }

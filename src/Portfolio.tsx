@@ -3,16 +3,24 @@ import "./global.css"
 import { Home } from './Home';
 import resume from './../public/RCP_resume.jpg';
 
-export class Portfolio extends Component<{}, {}> {
+
+type PortfolioState = {
+    showResume: boolean
+}
+
+export class Portfolio extends Component<{}, PortfolioState> {
     constructor(props: {}) {
         super(props);
+        this.state = {
+            showResume: false
+        };
     }
 
     render() {
         return (
             <div className="container">
                 <div className="left">{this.renderResume()}</div>
-                <div className="middle"><Home/></div>
+                <div className="middle"><Home showResume={this.state.showResume} hideResume={this.hideResume}/></div>
                 <div className="right"> {this.renderCoursework()} </div>
             </div>
         );
@@ -34,6 +42,14 @@ export class Portfolio extends Component<{}, {}> {
     }
 
     renderResume = (): React.ReactElement => {
-        return <object data={resume} className='resume'/>
+        return <div><object data={resume} className='resumeImage' onClick={this.openResume}/></div>
+    }
+
+    openResume = (): void => {
+        this.setState({showResume: true})
+    }
+
+    hideResume = (): void => {
+        this.setState({showResume: false})
     }
 }

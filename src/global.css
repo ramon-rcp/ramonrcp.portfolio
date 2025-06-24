@@ -22,6 +22,7 @@
 .middle {
   flex: 6; /* Takes 75% of the width */
   background-color: white; /* Example color */
+  height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -30,6 +31,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.resume {
+.resumeImage {
   max-width: 100%;
 }
