@@ -33848,7 +33848,7 @@ root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -33860,4 +33860,4 @@ root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.e17f067f0775b5d821f7.js.map
+//# sourceMappingURL=main.fec4eaa8f49639b43e4b.js.map
