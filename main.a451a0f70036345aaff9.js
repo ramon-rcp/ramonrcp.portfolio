@@ -2,9 +2,47 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./docs/Contact.css":
+/***/ "./public/RCP_resume.jpg":
+/*!*******************************!*\
+  !*** ./public/RCP_resume.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "fad22b4cfbd70f941a8ead076a8adb2b.jpg");
+
+/***/ }),
+
+/***/ "./src/Contact.css":
+/*!*************************!*\
+  !*** ./src/Contact.css ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Home.css":
+/*!**********************!*\
+  !*** ./src/Home.css ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Projects.css":
 /*!**************************!*\
-  !*** ./docs/Contact.css ***!
+  !*** ./src/Projects.css ***!
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -14,34 +52,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./docs/Home.css":
-/*!***********************!*\
-  !*** ./docs/Home.css ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./docs/Projects.css":
-/*!***************************!*\
-  !*** ./docs/Projects.css ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./docs/global.css":
-/*!*************************!*\
-  !*** ./docs/global.css ***!
-  \*************************/
+/***/ "./src/global.css":
+/*!************************!*\
+  !*** ./src/global.css ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -33422,10 +33436,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./docs/Home.tsx":
-/*!***********************!*\
-  !*** ./docs/Home.tsx ***!
-  \***********************/
+/***/ "./src/Home.tsx":
+/*!**********************!*\
+  !*** ./src/Home.tsx ***!
+  \**********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33455,10 +33469,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Home = void 0;
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-__webpack_require__(/*! ./global.css */ "./docs/global.css");
-__webpack_require__(/*! ./Home.css */ "./docs/Home.css");
-__webpack_require__(/*! ./Contact.css */ "./docs/Contact.css");
-const Projects_1 = __webpack_require__(/*! ./Projects */ "./docs/Projects.tsx");
+__webpack_require__(/*! ./global.css */ "./src/global.css");
+__webpack_require__(/*! ./Home.css */ "./src/Home.css");
+__webpack_require__(/*! ./Contact.css */ "./src/Contact.css");
+const Projects_1 = __webpack_require__(/*! ./Projects */ "./src/Projects.tsx");
 const aboutText = ["I am a Computer Engineering student at the University of Washington, with a strong interest in software engineering, human-computer interaction, and automation technology. With experience in Java and other programming languages, I aim to solve real-world problems by building innovative, user-centered solutions that improve lives.",
     "I enjoy collaborating with cross-functional teams to deliver high-quality software that prioritizes user experience, performance, and accessibility. My academic journey has prepared me with technical and problem-solving skills, while my personal projects show my curiosity for facing complex challenges in inclusive technology.",
     "I’m eager to continue learning and growing in an environment that values innovation, collaboration, and making a social impact. Let’s connect if you share a passion for leveraging technology to make a difference!"];
@@ -33528,14 +33542,14 @@ class Home extends react_1.Component {
     }
 }
 exports.Home = Home;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSG9tZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL2RvY3MvSG9tZS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMsd0JBQXFCO0FBQ3JCLHNCQUFtQjtBQUNuQix5QkFBc0I7QUFDdEIseUNBQXNDO0FBTXRDLE1BQU0sU0FBUyxHQUFhLENBQUMsNlVBQTZVO0lBQzFXLHlVQUF5VTtJQUN6VSxzTkFBc04sQ0FBQyxDQUFBO0FBRXZOLE1BQWEsSUFBSyxTQUFRLGlCQUF3QjtJQUM5QyxZQUFZLEtBQVM7UUFDakIsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBcUNqQixnQkFBVyxHQUFHLEdBQXVCLEVBQUU7WUFDbkMsT0FBTywyQ0FBUyxTQUFTLEVBQUMsT0FBTztnQkFDN0Isb0VBQWdDO2dCQUNoQyx5Q0FBSSxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUs7Z0JBQ3JCLHlDQUFJLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBSztnQkFDckIseUNBQUksU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFLO2dCQUNyQixxQ0FBRyxJQUFJLEVBQUMsV0FBVyxFQUFDLFNBQVMsRUFBQyxZQUFZLEVBQUMsT0FBTyxFQUFFLElBQUksQ0FBQyxZQUFZLG1CQUFrQixDQUNqRixDQUFBO1FBQ2QsQ0FBQyxDQUFBO1FBRUQsa0JBQWEsR0FBRyxHQUF1QixFQUFFO1lBQ3JDLE9BQU8sMkNBQVMsU0FBUyxFQUFDLFNBQVM7Z0JBQy9CLG1FQUErQjtnQkFDL0I7b0JBQ0k7d0JBQUkscUNBQUcsSUFBSSxFQUFDLGlFQUFpRSxFQUFDLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixlQUFhLENBQUs7b0JBQ3pJO3dCQUFJLHFDQUFHLElBQUksRUFBQyw4QkFBOEIsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsYUFBVyxDQUFLO29CQUNwRzt3QkFBSSxxQ0FBRyxJQUFJLEVBQUMsc0NBQXNDLEVBQUMsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLGdCQUFjLENBQUs7b0JBQy9HO3dCQUFJLHFDQUFHLElBQUksRUFBQyxxRUFBcUUsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsWUFBVSxDQUFLO29CQUMxSTt3QkFBSSxxQ0FBRyxJQUFJLEVBQUMsa0NBQWtDLDBDQUF3QyxDQUFLLENBQzFGLENBQ0MsQ0FBQztRQUNmLENBQUMsQ0FBQTtRQUVELGlCQUFZLEdBQUcsR0FBUyxFQUFFO1lBQ3RCLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsVUFBVSxFQUFFLENBQUMsQ0FBQztRQUN4QyxDQUFDLENBQUE7UUFFRCxnQkFBVyxHQUFHLEdBQVMsRUFBRTtZQUNyQixJQUFJLENBQUMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLFNBQVMsRUFBRSxDQUFDLENBQUM7UUFDdkMsQ0FBQyxDQUFBO1FBRUQsY0FBUyxHQUFHLEdBQVMsRUFBRTtZQUNuQixJQUFJLENBQUMsUUFBUSxDQUFDLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBRSxDQUFDLENBQUM7UUFDckMsQ0FBQyxDQUFBO1FBckVHLElBQUksQ0FBQyxLQUFLLEdBQUc7WUFDVCxJQUFJLEVBQUUsT0FBTztTQUNoQixDQUFDO0lBQ04sQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLE9BQU8sR0FBdUIsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO1FBQ3JELFFBQVEsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLEVBQUU7WUFDckIsS0FBSyxPQUFPO2dCQUNSLE9BQU8sR0FBRyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7Z0JBQzdCLE1BQU07WUFDVixLQUFLLFVBQVU7Z0JBQ1gsT0FBTyxHQUFHLDhCQUFDLG1CQUFRLE9BQUUsQ0FBQztnQkFDdEIsTUFBTTtZQUNWLEtBQUssU0FBUztnQkFDVixPQUFPLEdBQUcsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO2dCQUMvQixNQUFNO1lBQ1Y7Z0JBQ0ksT0FBTyxHQUFHLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQztTQUNwQztRQUNELE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsTUFBTTtZQUNqQiwwQ0FBUSxTQUFTLEVBQUMsYUFBYTtnQkFDM0IsOERBQTBCO2dCQUMxQixxQ0FBRyxTQUFTLEVBQUMsU0FBUyx5Q0FBdUM7Z0JBQzdEO29CQUNBLHFDQUFHLElBQUksRUFBQyxRQUFRLEVBQUMsT0FBTyxFQUFFLElBQUksQ0FBQyxTQUFTLFlBQVc7b0JBQ25ELHFDQUFHLElBQUksRUFBQyxXQUFXLEVBQUMsT0FBTyxFQUFFLElBQUksQ0FBQyxZQUFZLGVBQWM7b0JBQzVELHFDQUFHLElBQUksRUFBQyxVQUFVLEVBQUMsT0FBTyxFQUFFLElBQUksQ0FBQyxXQUFXLGNBQWEsQ0FDbkQsQ0FDRDtZQUNSLE9BQU8sQ0FDTixDQUNULENBQUM7SUFDTixDQUFDO0NBb0NKO0FBekVELG9CQXlFQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSG9tZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9Ib21lLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLCtDQUF5QztBQUN6Qyx3QkFBcUI7QUFDckIsc0JBQW1CO0FBQ25CLHlCQUFzQjtBQUN0Qix5Q0FBc0M7QUFNdEMsTUFBTSxTQUFTLEdBQWEsQ0FBQyw2VUFBNlU7SUFDMVcseVVBQXlVO0lBQ3pVLHNOQUFzTixDQUFDLENBQUE7QUFFdk4sTUFBYSxJQUFLLFNBQVEsaUJBQXdCO0lBQzlDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFxQ2pCLGdCQUFXLEdBQUcsR0FBdUIsRUFBRTtZQUNuQyxPQUFPLDJDQUFTLFNBQVMsRUFBQyxPQUFPO2dCQUM3QixvRUFBZ0M7Z0JBQ2hDLHlDQUFJLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBSztnQkFDckIseUNBQUksU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFLO2dCQUNyQix5Q0FBSSxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUs7Z0JBQ3JCLHFDQUFHLElBQUksRUFBQyxXQUFXLEVBQUMsU0FBUyxFQUFDLFlBQVksRUFBQyxPQUFPLEVBQUUsSUFBSSxDQUFDLFlBQVksbUJBQWtCLENBQ2pGLENBQUE7UUFDZCxDQUFDLENBQUE7UUFFRCxrQkFBYSxHQUFHLEdBQXVCLEVBQUU7WUFDckMsT0FBTywyQ0FBUyxTQUFTLEVBQUMsU0FBUztnQkFDL0IsbUVBQStCO2dCQUMvQjtvQkFDSTt3QkFBSSxxQ0FBRyxJQUFJLEVBQUMsaUVBQWlFLEVBQUMsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLGVBQWEsQ0FBSztvQkFDekk7d0JBQUkscUNBQUcsSUFBSSxFQUFDLDhCQUE4QixFQUFDLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixhQUFXLENBQUs7b0JBQ3BHO3dCQUFJLHFDQUFHLElBQUksRUFBQyxzQ0FBc0MsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsZ0JBQWMsQ0FBSztvQkFDL0c7d0JBQUkscUNBQUcsSUFBSSxFQUFDLHFFQUFxRSxFQUFDLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixZQUFVLENBQUs7b0JBQzFJO3dCQUFJLHFDQUFHLElBQUksRUFBQyxrQ0FBa0MsMENBQXdDLENBQUssQ0FDMUYsQ0FDQyxDQUFDO1FBQ2YsQ0FBQyxDQUFBO1FBRUQsaUJBQVksR0FBRyxHQUFTLEVBQUU7WUFDdEIsSUFBSSxDQUFDLFFBQVEsQ0FBQyxFQUFFLElBQUksRUFBRSxVQUFVLEVBQUUsQ0FBQyxDQUFDO1FBQ3hDLENBQUMsQ0FBQTtRQUVELGdCQUFXLEdBQUcsR0FBUyxFQUFFO1lBQ3JCLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsU0FBUyxFQUFFLENBQUMsQ0FBQztRQUN2QyxDQUFDLENBQUE7UUFFRCxjQUFTLEdBQUcsR0FBUyxFQUFFO1lBQ25CLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBRSxJQUFJLEVBQUUsT0FBTyxFQUFFLENBQUMsQ0FBQztRQUNyQyxDQUFDLENBQUE7UUFyRUcsSUFBSSxDQUFDLEtBQUssR0FBRztZQUNULElBQUksRUFBRSxPQUFPO1NBQ2hCLENBQUM7SUFDTixDQUFDO0lBRUQsTUFBTTtRQUNGLElBQUksT0FBTyxHQUF1QixJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7UUFDckQsUUFBUSxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksRUFBRTtZQUNyQixLQUFLLE9BQU87Z0JBQ1IsT0FBTyxHQUFHLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQztnQkFDN0IsTUFBTTtZQUNWLEtBQUssVUFBVTtnQkFDWCxPQUFPLEdBQUcsOEJBQUMsbUJBQVEsT0FBRSxDQUFDO2dCQUN0QixNQUFNO1lBQ1YsS0FBSyxTQUFTO2dCQUNWLE9BQU8sR0FBRyxJQUFJLENBQUMsYUFBYSxFQUFFLENBQUM7Z0JBQy9CLE1BQU07WUFDVjtnQkFDSSxPQUFPLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO1NBQ3BDO1FBQ0QsT0FBTyxDQUNILHVDQUFLLFNBQVMsRUFBQyxNQUFNO1lBQ2pCLDBDQUFRLFNBQVMsRUFBQyxhQUFhO2dCQUMzQiw4REFBMEI7Z0JBQzFCLHFDQUFHLFNBQVMsRUFBQyxTQUFTLHlDQUF1QztnQkFDN0Q7b0JBQ0EscUNBQUcsSUFBSSxFQUFDLFFBQVEsRUFBQyxPQUFPLEVBQUUsSUFBSSxDQUFDLFNBQVMsWUFBVztvQkFDbkQscUNBQUcsSUFBSSxFQUFDLFdBQVcsRUFBQyxPQUFPLEVBQUUsSUFBSSxDQUFDLFlBQVksZUFBYztvQkFDNUQscUNBQUcsSUFBSSxFQUFDLFVBQVUsRUFBQyxPQUFPLEVBQUUsSUFBSSxDQUFDLFdBQVcsY0FBYSxDQUNuRCxDQUNEO1lBQ1IsT0FBTyxDQUNOLENBQ1QsQ0FBQztJQUNOLENBQUM7Q0FvQ0o7QUF6RUQsb0JBeUVDIn0=
 
 /***/ }),
 
-/***/ "./docs/Portfolio.tsx":
-/*!****************************!*\
-  !*** ./docs/Portfolio.tsx ***!
-  \****************************/
+/***/ "./src/Portfolio.tsx":
+/*!***************************!*\
+  !*** ./src/Portfolio.tsx ***!
+  \***************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33562,11 +33576,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Portfolio = void 0;
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-__webpack_require__(/*! ./global.css */ "./docs/global.css");
-const Home_1 = __webpack_require__(/*! ./Home */ "./docs/Home.tsx");
+__webpack_require__(/*! ./global.css */ "./src/global.css");
+const Home_1 = __webpack_require__(/*! ./Home */ "./src/Home.tsx");
+const RCP_resume_jpg_1 = __importDefault(__webpack_require__(/*! ./../public/RCP_resume.jpg */ "./public/RCP_resume.jpg"));
 class Portfolio extends react_1.Component {
     constructor(props) {
         super(props);
@@ -33591,12 +33609,12 @@ class Portfolio extends react_1.Component {
                             react_1.default.createElement("a", { href: "https://math.washington.edu/math300" }, "Math 300: Mathematical Reasoning")))));
         };
         this.renderResume = () => {
-            return react_1.default.createElement("iframe", { src: "/path-to-your-pdf-file.pdf", title: "PDF Viewer", width: "100%", height: "100%", style: { border: "none" } });
+            return react_1.default.createElement("object", { data: RCP_resume_jpg_1.default, className: 'resume' });
         };
     }
     render() {
         return (react_1.default.createElement("div", { className: "container" },
-            react_1.default.createElement("div", { className: "left" }, "Left"),
+            react_1.default.createElement("div", { className: "left" }, this.renderResume()),
             react_1.default.createElement("div", { className: "middle" },
                 react_1.default.createElement(Home_1.Home, null)),
             react_1.default.createElement("div", { className: "right" },
@@ -33606,14 +33624,14 @@ class Portfolio extends react_1.Component {
     }
 }
 exports.Portfolio = Portfolio;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUG9ydGZvbGlvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vZG9jcy9Qb3J0Zm9saW8udHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsK0NBQXlDO0FBQ3pDLHdCQUFxQjtBQUNyQixpQ0FBOEI7QUFFOUIsTUFBYSxTQUFVLFNBQVEsaUJBQWlCO0lBQzVDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFhakIscUJBQWdCLEdBQUcsR0FBdUIsRUFBRTtZQUN4QyxPQUFPO2dCQUNILHVEQUFtQjtnQkFDbkI7b0JBQVE7d0JBQ0o7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwwQ0FBd0MsQ0FBSzt3QkFDNUc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCx1Q0FBcUMsQ0FBSzt3QkFDekc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCxvQ0FBa0MsQ0FBSzt3QkFDdEc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwrQ0FBNkMsQ0FBSzt3QkFDakg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwrQ0FBNkMsQ0FBSzt3QkFDakg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCw4Q0FBNEMsQ0FBSzt3QkFDaEg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLHFDQUFxQyx1Q0FBcUMsQ0FBSyxDQUMxRixDQUFTLENBQ1osQ0FBQTtRQUNWLENBQUMsQ0FBQTtRQUVELGlCQUFZLEdBQUcsR0FBdUIsRUFBRTtZQUNwQyxPQUFPLDBDQUNILEdBQUcsRUFBQyw0QkFBNEIsRUFDaEMsS0FBSyxFQUFDLFlBQVksRUFDbEIsS0FBSyxFQUFDLE1BQU0sRUFDWixNQUFNLEVBQUMsTUFBTSxFQUNiLEtBQUssRUFBRSxFQUFFLE1BQU0sRUFBRSxNQUFNLEVBQUUsR0FDbkIsQ0FBQTtRQUNkLENBQUMsQ0FBQTtJQW5DRCxDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsV0FBVztZQUN0Qix1Q0FBSyxTQUFTLEVBQUMsTUFBTSxXQUFXO1lBQ2hDLHVDQUFLLFNBQVMsRUFBQyxRQUFRO2dCQUFDLDhCQUFDLFdBQUksT0FBRSxDQUFNO1lBQ3JDLHVDQUFLLFNBQVMsRUFBQyxPQUFPOztnQkFBRyxJQUFJLENBQUMsZ0JBQWdCLEVBQUU7b0JBQVEsQ0FDdEQsQ0FDVCxDQUFDO0lBQ04sQ0FBQztDQTBCSjtBQXZDRCw4QkF1Q0MifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUG9ydGZvbGlvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL1BvcnRmb2xpby50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMsd0JBQXFCO0FBQ3JCLGlDQUE4QjtBQUM5QixnRkFBZ0Q7QUFFaEQsTUFBYSxTQUFVLFNBQVEsaUJBQWlCO0lBQzVDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFhakIscUJBQWdCLEdBQUcsR0FBdUIsRUFBRTtZQUN4QyxPQUFPO2dCQUNILHVEQUFtQjtnQkFDbkI7b0JBQVE7d0JBQ0o7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwwQ0FBd0MsQ0FBSzt3QkFDNUc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCx1Q0FBcUMsQ0FBSzt3QkFDekc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCxvQ0FBa0MsQ0FBSzt3QkFDdEc7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwrQ0FBNkMsQ0FBSzt3QkFDakg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCwrQ0FBNkMsQ0FBSzt3QkFDakg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLG1EQUFtRCw4Q0FBNEMsQ0FBSzt3QkFDaEg7NEJBQUkscUNBQUcsSUFBSSxFQUFDLHFDQUFxQyx1Q0FBcUMsQ0FBSyxDQUMxRixDQUFTLENBQ1osQ0FBQTtRQUNWLENBQUMsQ0FBQTtRQUVELGlCQUFZLEdBQUcsR0FBdUIsRUFBRTtZQUNwQyxPQUFPLDBDQUFRLElBQUksRUFBRSx3QkFBTSxFQUFFLFNBQVMsRUFBQyxRQUFRLEdBQUUsQ0FBQTtRQUNyRCxDQUFDLENBQUE7SUE3QkQsQ0FBQztJQUVELE1BQU07UUFDRixPQUFPLENBQ0gsdUNBQUssU0FBUyxFQUFDLFdBQVc7WUFDdEIsdUNBQUssU0FBUyxFQUFDLE1BQU0sSUFBRSxJQUFJLENBQUMsWUFBWSxFQUFFLENBQU87WUFDakQsdUNBQUssU0FBUyxFQUFDLFFBQVE7Z0JBQUMsOEJBQUMsV0FBSSxPQUFFLENBQU07WUFDckMsdUNBQUssU0FBUyxFQUFDLE9BQU87O2dCQUFHLElBQUksQ0FBQyxnQkFBZ0IsRUFBRTtvQkFBUSxDQUN0RCxDQUNULENBQUM7SUFDTixDQUFDO0NBb0JKO0FBakNELDhCQWlDQyJ9
 
 /***/ }),
 
-/***/ "./docs/Projects.tsx":
-/*!***************************!*\
-  !*** ./docs/Projects.tsx ***!
-  \***************************/
+/***/ "./src/Projects.tsx":
+/*!**************************!*\
+  !*** ./src/Projects.tsx ***!
+  \**************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33643,8 +33661,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Projects = void 0;
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-__webpack_require__(/*! ./global.css */ "./docs/global.css");
-__webpack_require__(/*! ./Projects.css */ "./docs/Projects.css");
+__webpack_require__(/*! ./global.css */ "./src/global.css");
+__webpack_require__(/*! ./Projects.css */ "./src/Projects.css");
 class Projects extends react_1.Component {
     constructor(props) {
         super(props);
@@ -33692,14 +33710,14 @@ const projectsData = [
         link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642"
     }
 ];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvamVjdHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9kb2NzL1Byb2plY3RzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLCtDQUF5QztBQUN6Qyx3QkFBcUI7QUFDckIsMEJBQXdCO0FBRXhCLE1BQWEsUUFBUyxTQUFRLGlCQUFpQjtJQUMzQyxZQUFZLEtBQVM7UUFDakIsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBa0JqQixzQkFBaUIsR0FBRyxHQUF1QixFQUFFO1lBQ3pDLE1BQU0sUUFBUSxHQUF5QixZQUFZLENBQUMsR0FBRyxDQUFDLENBQUMsT0FBTyxFQUFFLEtBQUssRUFBRSxFQUFFO2dCQUN2RSxPQUFPLENBQ0gsdUNBQUssU0FBUyxFQUFDLGNBQWMsRUFBQyxHQUFHLEVBQUUsS0FBSztvQkFDcEMsMENBQUssT0FBTyxDQUFDLEtBQUssQ0FBTTtvQkFDeEIseUNBQUksT0FBTyxDQUFDLFdBQVcsQ0FBSztvQkFDNUIscUNBQUcsSUFBSSxFQUFFLE9BQU8sQ0FBQyxJQUFJLEVBQUUsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLG1CQUFpQixDQUMvRSxDQUNULENBQUM7WUFDTixDQUFDLENBQUMsQ0FBQTtZQUNGLE9BQU8sdUNBQUssU0FBUyxFQUFDLGVBQWUsSUFDaEMsUUFBUSxDQUNQLENBQUE7UUFDVixDQUFDLENBQUE7UUE5QkcsSUFBSSxDQUFDLEtBQUssR0FBRztZQUNULElBQUksRUFBRSxPQUFPO1NBQ2hCLENBQUM7SUFDTixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsVUFBVTtZQUNyQiwwQ0FBUSxTQUFTLEVBQUMsaUJBQWlCO2dCQUMvQixxREFBaUI7Z0JBQ2pCLHFDQUFHLFNBQVMsRUFBQyxTQUFTLDRCQUEwQixDQUMzQztZQUNSLElBQUksQ0FBQyxpQkFBaUIsRUFBRSxDQUN2QixDQUNULENBQUM7SUFDTixDQUFDO0NBZ0JKO0FBbENELDRCQWtDQztBQUdELE1BQU0sWUFBWSxHQUFHO0lBQ2pCO1FBQ0ksS0FBSyxFQUFFLFlBQVk7UUFDbkIsV0FBVyxFQUFFLGtMQUFrTDtRQUMvTCxJQUFJLEVBQUUsb0RBQW9EO0tBQzdEO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsTUFBTTtRQUNiLFdBQVcsRUFBRSwrTkFBK047UUFDNU8sSUFBSSxFQUFFLG1DQUFtQztLQUM1QztJQUNEO1FBQ0ksS0FBSyxFQUFFLFdBQVc7UUFDbEIsV0FBVyxFQUFFLHdNQUF3TTtRQUNyTixJQUFJLEVBQUUsd0NBQXdDO0tBQ2pEO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsWUFBWTtRQUNuQixXQUFXLEVBQUUsc0tBQXNLO1FBQ25MLElBQUksRUFBRSw2RUFBNkU7S0FDdEY7Q0FDSixDQUFBIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvamVjdHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvUHJvamVjdHMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsK0NBQXlDO0FBQ3pDLHdCQUFxQjtBQUNyQiwwQkFBd0I7QUFFeEIsTUFBYSxRQUFTLFNBQVEsaUJBQWlCO0lBQzNDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFrQmpCLHNCQUFpQixHQUFHLEdBQXVCLEVBQUU7WUFDekMsTUFBTSxRQUFRLEdBQXlCLFlBQVksQ0FBQyxHQUFHLENBQUMsQ0FBQyxPQUFPLEVBQUUsS0FBSyxFQUFFLEVBQUU7Z0JBQ3ZFLE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsY0FBYyxFQUFDLEdBQUcsRUFBRSxLQUFLO29CQUNwQywwQ0FBSyxPQUFPLENBQUMsS0FBSyxDQUFNO29CQUN4Qix5Q0FBSSxPQUFPLENBQUMsV0FBVyxDQUFLO29CQUM1QixxQ0FBRyxJQUFJLEVBQUUsT0FBTyxDQUFDLElBQUksRUFBRSxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsbUJBQWlCLENBQy9FLENBQ1QsQ0FBQztZQUNOLENBQUMsQ0FBQyxDQUFBO1lBQ0YsT0FBTyx1Q0FBSyxTQUFTLEVBQUMsZUFBZSxJQUNoQyxRQUFRLENBQ1AsQ0FBQTtRQUNWLENBQUMsQ0FBQTtRQTlCRyxJQUFJLENBQUMsS0FBSyxHQUFHO1lBQ1QsSUFBSSxFQUFFLE9BQU87U0FDaEIsQ0FBQztJQUNOLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUNILHVDQUFLLFNBQVMsRUFBQyxVQUFVO1lBQ3JCLDBDQUFRLFNBQVMsRUFBQyxpQkFBaUI7Z0JBQy9CLHFEQUFpQjtnQkFDakIscUNBQUcsU0FBUyxFQUFDLFNBQVMsNEJBQTBCLENBQzNDO1lBQ1IsSUFBSSxDQUFDLGlCQUFpQixFQUFFLENBQ3ZCLENBQ1QsQ0FBQztJQUNOLENBQUM7Q0FnQko7QUFsQ0QsNEJBa0NDO0FBR0QsTUFBTSxZQUFZLEdBQUc7SUFDakI7UUFDSSxLQUFLLEVBQUUsWUFBWTtRQUNuQixXQUFXLEVBQUUsa0xBQWtMO1FBQy9MLElBQUksRUFBRSxvREFBb0Q7S0FDN0Q7SUFDRDtRQUNJLEtBQUssRUFBRSxNQUFNO1FBQ2IsV0FBVyxFQUFFLCtOQUErTjtRQUM1TyxJQUFJLEVBQUUsbUNBQW1DO0tBQzVDO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsV0FBVztRQUNsQixXQUFXLEVBQUUsd01BQXdNO1FBQ3JOLElBQUksRUFBRSx3Q0FBd0M7S0FDakQ7SUFDRDtRQUNJLEtBQUssRUFBRSxZQUFZO1FBQ25CLFdBQVcsRUFBRSxzS0FBc0s7UUFDbkwsSUFBSSxFQUFFLDZFQUE2RTtLQUN0RjtDQUNKLENBQUEifQ==
 
 /***/ }),
 
-/***/ "./docs/index.tsx":
-/*!************************!*\
-  !*** ./docs/index.tsx ***!
-  \************************/
+/***/ "./src/index.tsx":
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33709,13 +33727,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const client_1 = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-const Portfolio_1 = __webpack_require__(/*! ./Portfolio */ "./docs/Portfolio.tsx");
+const Portfolio_1 = __webpack_require__(/*! ./Portfolio */ "./src/Portfolio.tsx");
 const main = document.getElementById('main');
 if (main === null)
     throw new Error("Uh oh! HTML is missing 'main' element");
 const root = (0, client_1.createRoot)(main);
 root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9kb2NzL2luZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUFBLGtEQUEwQjtBQUMxQiw2Q0FBb0Q7QUFDcEQsMkNBQXdDO0FBR3hDLE1BQU0sSUFBSSxHQUFxQixRQUFRLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBQy9ELElBQUksSUFBSSxLQUFLLElBQUk7SUFDZixNQUFNLElBQUksS0FBSyxDQUFDLHVDQUF1QyxDQUFDLENBQUM7QUFFM0QsTUFBTSxJQUFJLEdBQVMsSUFBQSxtQkFBVSxFQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLElBQUksQ0FBQyxNQUFNLENBQUMsOEJBQUMscUJBQVMsT0FBRSxDQUFDLENBQUMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsa0RBQTBCO0FBQzFCLDZDQUFvRDtBQUNwRCwyQ0FBd0M7QUFHeEMsTUFBTSxJQUFJLEdBQXFCLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUM7QUFDL0QsSUFBSSxJQUFJLEtBQUssSUFBSTtJQUNmLE1BQU0sSUFBSSxLQUFLLENBQUMsdUNBQXVDLENBQUMsQ0FBQztBQUUzRCxNQUFNLElBQUksR0FBUyxJQUFBLG1CQUFVLEVBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEMsSUFBSSxDQUFDLE1BQU0sQ0FBQyw4QkFBQyxxQkFBUyxPQUFFLENBQUMsQ0FBQyJ9
 
 /***/ })
 
@@ -33749,6 +33767,23 @@ root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -33769,13 +33804,18 @@ root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./docs/index.tsx");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.tsx");
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.0b589ca3c648e5c506b4.js.map
+//# sourceMappingURL=main.a451a0f70036345aaff9.js.map

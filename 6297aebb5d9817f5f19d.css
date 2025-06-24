@@ -1,20 +1,29 @@
-/*!*******************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./docs/global.css ***!
-  \*******************************************************************/
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/global.css ***!
+  \******************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./docs/global.css (1) ***!
-  \***********************************************************************/
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/global.css (1) ***!
+  \**********************************************************************/
 .container {
     display: flex;
     height: 100vh; /* Full viewport height */
   }
   
-.left,
 .right {
-  flex: 1; /* Each takes 12.5% of the width */
+  flex: 2; /* Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
+}
+
+.left {
+  flex: 2; /* Takes 20% of the width */
+  background-color: lightgray; /* Example color */
+  padding: 20px; /* Example padding */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
 }
 
 .middle {
@@ -25,9 +34,13 @@ body {
   background-color: lightgray;
   font-family: 'Roboto', sans-serif;
 }
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./docs/Home.css ***!
-  \*****************************************************************/
+
+.resume {
+  max-width: 100%;
+}
+/*!****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Home.css ***!
+  \****************************************************************/
 .home {
     text-align: center;
     padding: 20px;
@@ -87,9 +100,9 @@ body {
     line-height: 1.6;
     color: #555;
   }
-/*!********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./docs/Contact.css ***!
-  \********************************************************************/
+/*!*******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Contact.css ***!
+  \*******************************************************************/
 .contact {
     padding: 40px 20px;
     text-align: center;
@@ -135,9 +148,9 @@ body {
   .contact ul li a:visited {
     color: #6c757d;
   }
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./docs/Projects.css ***!
-  \*********************************************************************/
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Projects.css ***!
+  \********************************************************************/
 .projects {
     padding: 20px;
     text-align: center;
@@ -167,4 +180,4 @@ body {
     text-decoration: none;
   }
 
-/*# sourceMappingURL=4617494b84f316243cde.css.map*/
+/*# sourceMappingURL=6297aebb5d9817f5f19d.css.map*/
