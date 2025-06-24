@@ -18,11 +18,11 @@ export class Portfolio extends Component<{}, PortfolioState> {
 
     render() {
         return (
-            <div className="container">
-                <div className="left">{this.renderResume()}</div>
+                <div className='container'>
+                    <div className="left">{this.renderResume()}</div>
                 <div className="middle"><Home showResume={this.state.showResume} hideResume={this.hideResume}/></div>
                 <div className="right"> {this.renderCoursework()} </div>
-            </div>
+                </div>
         );
     }
 

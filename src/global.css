@@ -1,16 +1,18 @@
 .container {
-    display: flex;
-    height: 100vh; /* Full viewport height */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20% 60% 20%;
+    min-height:100%;
   }
   
 .right {
-  flex: 2; /* Takes 20% of the width */
+  /* flex: 2; Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
 }
 
 .left {
-  flex: 2; /* Takes 20% of the width */
+  /* flex: 2; Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
   display: flex; /* Enable Flexbox */
@@ -26,9 +28,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-  background-color: lightgray;
+html, body {
+  background-color: white;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  display: grid;
 }
 
 .resumeImage {
