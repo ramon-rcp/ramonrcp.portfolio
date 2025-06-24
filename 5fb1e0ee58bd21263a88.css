@@ -6,18 +6,20 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/global.css (1) ***!
   \**********************************************************************/
 .container {
-    display: flex;
-    height: 100vh; /* Full viewport height */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20% 60% 20%;
+    min-height:100%;
   }
   
 .right {
-  flex: 2; /* Takes 20% of the width */
+  /* flex: 2; Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
 }
 
 .left {
-  flex: 2; /* Takes 20% of the width */
+  /* flex: 2; Takes 20% of the width */
   background-color: lightgray; /* Example color */
   padding: 20px; /* Example padding */
   display: flex; /* Enable Flexbox */
@@ -31,9 +33,12 @@
   background-color: white; /* Example color */
   height: 100%;
 }
-body {
-  background-color: lightgray;
+html, body {
+  background-color: white;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  display: grid;
 }
 
 .resumeImage {
@@ -186,4 +191,4 @@ body {
     text-decoration: none;
   }
 
-/*# sourceMappingURL=0914c278ef60f8ab5fa8.css.map*/
+/*# sourceMappingURL=5fb1e0ee58bd21263a88.css.map*/
