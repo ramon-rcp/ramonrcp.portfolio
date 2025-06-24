@@ -42,7 +42,7 @@ export class Portfolio extends Component<{}, PortfolioState> {
     }
 
     renderResume = (): React.ReactElement => {
-        return <div><object data={resume} className='resumeImage' onClick={this.openResume}/></div>
+        return <a href='#' onClick={this.openResume}><object data={resume} className='resumeImage'/></a>
     }
 
     openResume = (): void => {
