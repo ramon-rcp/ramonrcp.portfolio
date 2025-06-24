@@ -59,5 +59,10 @@ const projectsData = [
         title: "Viking Axe",
         description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
         link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642"
+    },
+    {
+        title: "Frogger",
+        description: "Simplified version of the classic Frogger game using SystemVerilog and an FPGA development board. The goal is to help a frog safely cross a busy road filled with cars — perfect for training wildlife! Developed for CSE 369 coursework.",
+        link: "https://github.com/ramon-rcp/Frogger"
     }
 ]
