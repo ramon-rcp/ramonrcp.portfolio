@@ -64,5 +64,10 @@ const projectsData = [
         title: "Frogger",
         description: "Simplified version of the classic Frogger game using SystemVerilog and an FPGA development board. The goal is to help a frog safely cross a busy road filled with cars — perfect for training wildlife! Developed for CSE 369 coursework.",
         link: "https://github.com/ramon-rcp/Frogger"
+    },
+    {
+        title: "Tic Tac Toe",
+        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
+        link: "https://github.com/ramon-rcp/tictactoe"
     }
 ]
