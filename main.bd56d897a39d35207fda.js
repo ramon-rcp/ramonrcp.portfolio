@@ -2,67 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./public/RCP_resume.jpg":
-/*!*******************************!*\
-  !*** ./public/RCP_resume.jpg ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "fad22b4cfbd70f941a8ead076a8adb2b.jpg");
-
-/***/ }),
-
-/***/ "./public/RCP_resume.pdf":
-/*!*******************************!*\
-  !*** ./public/RCP_resume.pdf ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "79c77d35ccc98c24b1b259e295d0929a.pdf");
-
-/***/ }),
-
-/***/ "./src/Contact.css":
+/***/ "./public/logo.png":
 /*!*************************!*\
-  !*** ./src/Contact.css ***!
+  !*** ./public/logo.png ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/Home.css":
-/*!**********************!*\
-  !*** ./src/Home.css ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/Projects.css":
-/*!**************************!*\
-  !*** ./src/Projects.css ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "d9632663d9bc85fb73fb884b39a04eed.png");
 
 /***/ }),
 
@@ -33450,10 +33400,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./src/Home.tsx":
-/*!**********************!*\
-  !*** ./src/Home.tsx ***!
-  \**********************/
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33484,186 +33434,63 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Home = void 0;
+exports.App = void 0;
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-__webpack_require__(/*! ./global.css */ "./src/global.css");
-__webpack_require__(/*! ./Home.css */ "./src/Home.css");
-__webpack_require__(/*! ./Contact.css */ "./src/Contact.css");
 const Projects_1 = __webpack_require__(/*! ./Projects */ "./src/Projects.tsx");
-const RCP_resume_pdf_1 = __importDefault(__webpack_require__(/*! ./../public/RCP_resume.pdf */ "./public/RCP_resume.pdf"));
-const aboutText = ["I am a Computer Engineering student at the University of Washington, with a strong interest in software engineering, human-computer interaction, and automation technology. With experience in Java and other programming languages, I aim to solve real-world problems by building innovative, user-centered solutions that improve lives.",
-    "I enjoy collaborating with cross-functional teams to deliver high-quality software that prioritizes user experience, performance, and accessibility. My academic journey has prepared me with technical and problem-solving skills, while my personal projects show my curiosity for facing complex challenges in inclusive technology.",
-    "I’m eager to continue learning and growing in an environment that values innovation, collaboration, and making a social impact. Let’s connect if you share a passion for leveraging technology to make a difference!"];
-class Home extends react_1.Component {
-    constructor(props) {
-        super(props);
-        this.renderAbout = () => {
-            return react_1.default.createElement("section", { className: "about" },
-                react_1.default.createElement("h2", null, "Welcome to My Portfolio"),
-                react_1.default.createElement("p", null, aboutText[0]),
-                react_1.default.createElement("p", null, aboutText[1]),
-                react_1.default.createElement("p", null, aboutText[2]),
-                react_1.default.createElement("a", { href: "#projects", className: "cta-button", onClick: this.openProjects }, "View My Work"));
-        };
-        this.renderContact = () => {
-            return react_1.default.createElement("section", { className: "contact" },
-                react_1.default.createElement("h2", null, "Contacts and Platforms"),
-                react_1.default.createElement("ul", null,
-                    react_1.default.createElement("li", null,
-                        react_1.default.createElement("a", { href: "https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/", target: "_blank", rel: "noopener noreferrer" }, "LinkedIn")),
-                    react_1.default.createElement("li", null,
-                        react_1.default.createElement("a", { href: "https://github.com/ramon-rcp", target: "_blank", rel: "noopener noreferrer" }, "GitHub")),
-                    react_1.default.createElement("li", null,
-                        react_1.default.createElement("a", { href: "https://sketchfab.com/rmasteryogurtr", target: "_blank", rel: "noopener noreferrer" }, "Sketchfab")),
-                    react_1.default.createElement("li", null,
-                        react_1.default.createElement("a", { href: "https://play.unity.com/en/user/d68164be-ec02-43d0-a1f7-191e935b1e39", target: "_blank", rel: "noopener noreferrer" }, "Unity")),
-                    react_1.default.createElement("li", null,
-                        react_1.default.createElement("a", { href: "mailto:ramoncostapatel@gmail.com" }, "Email Me: ramoncostapatel@gmail.com"))));
-        };
-        this.renderResume = () => {
-            return react_1.default.createElement("object", { data: RCP_resume_pdf_1.default, className: 'resume' });
-        };
-        this.openProjects = () => {
-            this.props.hideResume();
-            this.setState({ show: "projects" });
-        };
-        this.openContact = () => {
-            this.props.hideResume();
-            this.setState({ show: "contact" });
-        };
-        this.openAbout = () => {
-            this.props.hideResume();
-            this.setState({ show: "about" });
-        };
-        this.state = {
-            show: "about"
-        };
-    }
-    render() {
-        let display = this.renderAbout();
-        switch (this.state.show) {
-            case "about":
-                display = this.renderAbout();
-                break;
-            case "projects":
-                display = react_1.default.createElement(Projects_1.Projects, null);
-                break;
-            case "contact":
-                display = this.renderContact();
-                break;
-            default:
-                display = this.renderAbout();
-        }
-        if (this.props.showResume) {
-            display = this.renderResume();
-        }
-        return (react_1.default.createElement("div", { className: "home" },
-            react_1.default.createElement("header", { className: "home-header" },
-                react_1.default.createElement("h1", null, "Ramon Costa-Patel"),
-                react_1.default.createElement("p", { className: "tagline" }, "Computer Engineer | Problem Solver"),
-                react_1.default.createElement("nav", null,
-                    react_1.default.createElement("a", { href: "#about", onClick: this.openAbout }, "About"),
-                    react_1.default.createElement("a", { href: "#projects", onClick: this.openProjects }, "Projects"),
-                    react_1.default.createElement("a", { href: "#contact", onClick: this.openContact }, "Contacts and Platforms"))),
-            display));
-    }
-}
-exports.Home = Home;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSG9tZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9Ib21lLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLCtDQUF5QztBQUN6Qyx3QkFBcUI7QUFDckIsc0JBQW1CO0FBQ25CLHlCQUFzQjtBQUN0Qix5Q0FBc0M7QUFDdEMsZ0ZBQWdEO0FBV2hELE1BQU0sU0FBUyxHQUFhLENBQUMsNlVBQTZVO0lBQzFXLHlVQUF5VTtJQUN6VSxzTkFBc04sQ0FBQyxDQUFBO0FBRXZOLE1BQWEsSUFBSyxTQUFRLGlCQUErQjtJQUNyRCxZQUFZLEtBQWdCO1FBQ3hCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztRQXdDakIsZ0JBQVcsR0FBRyxHQUF1QixFQUFFO1lBQ25DLE9BQU8sMkNBQVMsU0FBUyxFQUFDLE9BQU87Z0JBQzdCLG9FQUFnQztnQkFDaEMseUNBQUksU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFLO2dCQUNyQix5Q0FBSSxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUs7Z0JBQ3JCLHlDQUFJLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBSztnQkFDckIscUNBQUcsSUFBSSxFQUFDLFdBQVcsRUFBQyxTQUFTLEVBQUMsWUFBWSxFQUFDLE9BQU8sRUFBRSxJQUFJLENBQUMsWUFBWSxtQkFBa0IsQ0FDakYsQ0FBQTtRQUNkLENBQUMsQ0FBQTtRQUVELGtCQUFhLEdBQUcsR0FBdUIsRUFBRTtZQUNyQyxPQUFPLDJDQUFTLFNBQVMsRUFBQyxTQUFTO2dCQUMvQixtRUFBK0I7Z0JBQy9CO29CQUNJO3dCQUFJLHFDQUFHLElBQUksRUFBQyxpRUFBaUUsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsZUFBYSxDQUFLO29CQUN6STt3QkFBSSxxQ0FBRyxJQUFJLEVBQUMsOEJBQThCLEVBQUMsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLGFBQVcs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
-
-/***/ }),
-
-/***/ "./src/Portfolio.tsx":
-/*!***************************!*\
-  !*** ./src/Portfolio.tsx ***!
-  \***************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Portfolio = void 0;
-const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 __webpack_require__(/*! ./global.css */ "./src/global.css");
-const Home_1 = __webpack_require__(/*! ./Home */ "./src/Home.tsx");
-const RCP_resume_jpg_1 = __importDefault(__webpack_require__(/*! ./../public/RCP_resume.jpg */ "./public/RCP_resume.jpg"));
-class Portfolio extends react_1.Component {
+const logo_png_1 = __importDefault(__webpack_require__(/*! ../public/logo.png */ "./public/logo.png"));
+class App extends react_1.Component {
     constructor(props) {
         super(props);
-        this.renderCoursework = () => {
-            return react_1.default.createElement("div", null,
-                react_1.default.createElement("h2", null, "Coursework"),
-                react_1.default.createElement("strong", null,
-                    react_1.default.createElement("ul", null,
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse421/" }, "CSE 421: Introduction to Algorithms")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse473/" }, "CSE 473: Artificial Intelligence")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse403/" }, "CSE 403: Software Engineering")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse332/" }, "CSE 332: Data Structures and Parallelism")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse344/" }, "CSE 344: Introduction to Data Management")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://courses.cs.washington.edu/courses/cse369/" }, "CSE 369: Introduction to Digital Design")),
-                        react_1.default.createElement("li", null,
-                            react_1.default.createElement("a", { href: "https://math.washington.edu/math300" }, "Math 300: Mathematical Reasoning")))));
-        };
-        this.renderResume = () => {
-            return react_1.default.createElement("a", { href: '#', onClick: this.openResume },
-                react_1.default.createElement("object", { data: RCP_resume_jpg_1.default, className: 'resumeImage' }));
-        };
-        this.openResume = () => {
-            this.setState({ showResume: true });
-        };
-        this.hideResume = () => {
-            this.setState({ showResume: false });
-        };
-        this.state = {
-            showResume: false
-        };
     }
     render() {
-        return (react_1.default.createElement("div", { className: 'container' },
-            react_1.default.createElement("div", { className: "left" },
-                react_1.default.createElement("h2", null, "Resume"),
-                this.renderResume()),
-            react_1.default.createElement("div", { className: "middle" },
-                react_1.default.createElement(Home_1.Home, { showResume: this.state.showResume, hideResume: this.hideResume })),
-            react_1.default.createElement("div", { className: "right" },
-                " ",
-                this.renderCoursework(),
-                " ")));
+        return (react_1.default.createElement("body", { className: "app" },
+            react_1.default.createElement(Header, null),
+            react_1.default.createElement(Hero, null),
+            react_1.default.createElement(About, null),
+            react_1.default.createElement(Projects_1.Projects, null),
+            react_1.default.createElement("footer", { className: "footer" }, "\u00A9 2025 Ramon Costa-Patel. All rights reserved.")));
     }
 }
-exports.Portfolio = Portfolio;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUG9ydGZvbGlvLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL1BvcnRmb2xpby50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMsd0JBQXFCO0FBQ3JCLGlDQUE4QjtBQUM5QixnRkFBZ0Q7QUFPaEQsTUFBYSxTQUFVLFNBQVEsaUJBQTZCO0lBQ3hELFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFnQmpCLHFCQUFnQixHQUFHLEdBQXVCLEVBQUU7WUFDeEMsT0FBTztnQkFDSCx1REFBbUI7Z0JBQ25CO29CQUFRO3dCQUNKOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsMENBQXdDLENBQUs7d0JBQzVHOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsdUNBQXFDLENBQUs7d0JBQ3pHOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsb0NBQWtDLENBQUs7d0JBQ3RHOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsK0NBQTZDLENBQUs7d0JBQ2pIOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsK0NBQTZDLENBQUs7d0JBQ2pIOzRCQUFJLHFDQUFHLElBQUksRUFBQyxtREFBbUQsOENBQTRDLENBQUs7d0JBQ2hIOzRCQUFJLHFDQUFHLElBQUksRUFBQyxxQ0FBcUMsdUNBQXFDLENBQUssQ0FDMUYsQ0FBUyxDQUNaLENBQUE7UUFDVixDQUFDLENBQUE7UUFFRCxpQkFBWSxHQUFHLEdBQXVCLEVBQUU7WUFDcEMsT0FBTyxxQ0FBRyxJQUFJLEVBQUMsR0FBRyxFQUFDLE9BQU8sRUFBRSxJQUFJLENBQUMsVUFBVTtnQkFBRSwwQ0FBUSxJQUFJLEVBQUUsd0JBQU0sRUFBRSxTQUFTLEVBQUMsYUFBYSxHQUFFLENBQUksQ0FBQTtRQUNwRyxDQUFDLENBQUE7UUFFRCxlQUFVLEdBQUcsR0FBUyxFQUFFO1lBQ3BCLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBQyxVQUFVLEVBQUUsSUFBSSxFQUFDLENBQUMsQ0FBQTtRQUNyQyxDQUFDLENBQUE7UUFFRCxlQUFVLEdBQUcsR0FBUyxFQUFFO1lBQ3BCLElBQUksQ0FBQyxRQUFRLENBQUMsRUFBQyxVQUFVLEVBQUUsS0FBSyxFQUFDLENBQUMsQ0FBQTtRQUN0QyxDQUFDLENBQUE7UUF4Q0csSUFBSSxDQUFDLEtBQUssR0FBRztZQUNULFVBQVUsRUFBRSxLQUFLO1NBQ3BCLENBQUM7SUFDTixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsV0FBVztZQUN0Qix1Q0FBSyxTQUFTLEVBQUMsTUFBTTtnQkFBQyxtREFBZTtnQkFBQyxJQUFJLENBQUMsWUFBWSxFQUFFLENBQU87WUFDaEUsdUNBQUssU0FBUyxFQUFDLFFBQVE7Z0JBQUMsOEJBQUMsV0FBSSxJQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLFVBQVUsRUFBRSxVQUFVLEVBQUUsSUFBSSxDQUFDLFVBQVUsR0FBRyxDQUFNO1lBQ3JHLHVDQUFLLFNBQVMsRUFBQyxPQUFPOztnQkFBRyxJQUFJLENBQUMsZ0JBQWdCLEVBQUU7b0JBQVEsQ0FDdEQsQ0FDVCxDQUFDO0lBQ04sQ0FBQztDQTRCSjtBQTVDRCw4QkE0Q0MifQ==
+exports.App = App;
+class Header extends react_1.Component {
+    render() {
+        return (react_1.default.createElement("header", { className: "header" },
+            react_1.default.createElement("nav", { className: "nav" },
+                react_1.default.createElement("a", { href: "#hero", className: "nav-link" }, "Home"),
+                react_1.default.createElement("a", { href: "#about", className: "nav-link" }, "About"),
+                react_1.default.createElement("a", { href: "#projects", className: "nav-link" }, "Projects"))));
+    }
+}
+class Hero extends react_1.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (react_1.default.createElement("section", { className: "hero", id: "hero" },
+            react_1.default.createElement("div", { className: "hero-container" },
+                react_1.default.createElement("img", { src: logo_png_1.default, alt: "Your profile" }),
+                react_1.default.createElement("h1", { className: "hero-title" }, "Ramon Costa-Patel"),
+                react_1.default.createElement("p", { className: "hero-subtitle" }, "Computer Engineer"),
+                react_1.default.createElement("div", { className: "hero-links" },
+                    react_1.default.createElement("a", { href: "mailto:ramoncostapatel@gmail.com", className: "link" }, "Email"),
+                    react_1.default.createElement("a", { href: "https://github.com/ramon-rcp", target: "_blank", rel: "noopener noreferrer", className: "link" }, "GitHub"),
+                    react_1.default.createElement("a", { href: "https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/", target: "_blank", rel: "noopener noreferrer", className: "link" }, "LinkedIn")))));
+    }
+}
+class About extends react_1.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (react_1.default.createElement("section", { className: "about", id: "about" },
+            react_1.default.createElement("div", { className: "container" },
+                react_1.default.createElement("h2", { className: "about-title" }, "About Me"),
+                react_1.default.createElement("p", null, "Hi! I\u2019m Ramon Costa-Patel, a Computer Engineering student at the University of Washington with a passion for building impactful software and exploring the edges of tech. Whether I\u2019m deploying Linux labs across campus or designing full-stack apps with React or Flutter, I\u2019m always looking for ways to connect technology with real human experiences."),
+                react_1.default.createElement("p", null, "Outside of engineering, I\u2019m a huge fan of soccer (Visca el Bar\u00E7a!), love playing basketball, and can get lost in a great video game for hours (such as Elden Ring). I\u2019m especially drawn to the intersection of creativity and logic, whether it\u2019s crafting an intuitive user interface or debugging low-level hardware code."))));
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0FwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMseUNBQXNDO0FBQ3RDLHdCQUFxQjtBQUNyQixrRUFBcUM7QUFHckMsTUFBYSxHQUFJLFNBQVEsaUJBQWlCO0lBQ3RDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDakIsQ0FBQztJQUVELE1BQU07UUFDRixPQUFPLENBQ0gsd0NBQU0sU0FBUyxFQUFDLEtBQUs7WUFDakIsOEJBQUMsTUFBTSxPQUFFO1lBQ1QsOEJBQUMsSUFBSSxPQUFHO1lBQ1IsOEJBQUMsS0FBSyxPQUFFO1lBQ1IsOEJBQUMsbUJBQVEsT0FBRTtZQUNYLDBDQUFRLFNBQVMsRUFBQyxRQUFRLDBEQUU3QixDQUNNLENBQ1YsQ0FBQTtJQUNMLENBQUM7Q0FDSjtBQWxCRCxrQkFrQkM7QUFFRCxNQUFNLE1BQU8sU0FBUSxpQkFBaUI7SUFDbEMsTUFBTTtRQUNGLE9BQU8sQ0FDSCwwQ0FBUSxTQUFTLEVBQUMsUUFBUTtZQUN0Qix1Q0FBSyxTQUFTLEVBQUMsS0FBSztnQkFDaEIscUNBQUcsSUFBSSxFQUFDLE9BQU8sRUFBQyxTQUFTLEVBQUMsVUFBVSxXQUFTO2dCQUM3QyxxQ0FBRyxJQUFJLEVBQUMsUUFBUSxFQUFDLFNBQVMsRUFBQyxVQUFVLFlBQVU7Z0JBQy9DLHFDQUFHLElBQUksRUFBQyxXQUFXLEVBQUMsU0FBUyxFQUFDLFVBQVUsZUFBYSxDQUNuRCxDQUNELENBQ1osQ0FBQztJQUNOLENBQUM7Q0FDSjtBQUdELE1BQU0sSUFBSyxTQUFRLGlCQUFpQjtJQUNoQyxZQUFZLEtBQVM7UUFDakIsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pCLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUNILDJDQUFTLFNBQVMsRUFBQyxNQUFNLEVBQUMsRUFBRSxFQUFDLE1BQU07WUFDL0IsdUNBQUssU0FBUyxFQUFDLGdCQUFnQjtnQkFDM0IsdUNBQ0ksR0FBRyxFQUFFLGtCQUFJLEVBQ1QsR0FBRyxFQUFDLGNBQWMsR0FDcEI7Z0JBQ0Ysc0NBQUksU0FBUyxFQUFDLFlBQVksd0JBQXVCO2dCQUNqRCxxQ0FBRyxTQUFTLEVBQUMsZUFBZSx3QkFBc0I7Z0JBQ2xELHVDQUFLLFNBQVMsRUFBQyxZQUFZO29CQUN2QixxQ0FBRyxJQUFJLEVBQUMsa0NBQWtDLEVBQUMsU0FBUyxFQUFDLE1BQU0sWUFBVTtvQkFDckUscUNBQUcsSUFBSSxFQUFDLDhCQUE4QixFQUFDLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixFQUFDLFNBQVMsRUFBQyxNQUFNLGFBQVc7b0JBQzVHLHFDQUFHLElBQUksRUFBQyxpRUFBaUUsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsRUFBQyxTQUFTLEVBQUMsTUFBTSxlQUFhLENBQy9JLENBQ0osQ0FDQSxDQUNiLENBQUM7SUFDTixDQUFDO0NBQ0o7QUFFRCxNQUFNLEtBQU0sU0FBUSxpQkFBaUI7SUFDakMsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNqQixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCwyQ0FBUyxTQUFTLEVBQUMsT0FBTyxFQUFDLEVBQUUsRUFBQyxPQUFPO1lBQ3JDLHVDQUFLLFNBQVMsRUFBQyxXQUFXO2dCQUN0QixzQ0FBSSxTQUFTLEVBQUMsYUFBYSxlQUFjO2dCQUN6QyxzWkFBa1c7Z0JBQ2xXLDZYQUFvVSxDQUNsVSxDQUNBLENBQ1QsQ0FBQztJQUNOLENBQUM7Q0FDSiJ9
 
 /***/ }),
 
@@ -33701,16 +33528,15 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Projects = void 0;
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 __webpack_require__(/*! ./global.css */ "./src/global.css");
-__webpack_require__(/*! ./Projects.css */ "./src/Projects.css");
 class Projects extends react_1.Component {
     constructor(props) {
         super(props);
         this.renderProjectList = () => {
             const projList = projectsData.map((project, index) => {
                 return (react_1.default.createElement("div", { className: "project-card", key: index },
-                    react_1.default.createElement("h3", null, project.title),
-                    react_1.default.createElement("p", null, project.description),
-                    react_1.default.createElement("a", { href: project.link, target: "_blank", rel: "noopener noreferrer" }, "View Project")));
+                    react_1.default.createElement("h3", { className: 'project-title' }, project.title),
+                    react_1.default.createElement("p", { className: 'project-description' }, project.description),
+                    react_1.default.createElement("a", { href: project.link, target: "_blank", rel: "noopener noreferrer", className: 'link' }, "View Project")));
             });
             return react_1.default.createElement("div", { className: 'projects-grid' }, projList);
         };
@@ -33719,11 +33545,10 @@ class Projects extends react_1.Component {
         };
     }
     render() {
-        return (react_1.default.createElement("div", { className: "projects" },
-            react_1.default.createElement("header", { className: "projects-header" },
-                react_1.default.createElement("h1", null, "Projects"),
-                react_1.default.createElement("p", { className: "tagline" }, "A showcase of my work")),
-            this.renderProjectList()));
+        return (react_1.default.createElement("section", { className: "projects", id: "projects" },
+            react_1.default.createElement("div", { className: "container" },
+                react_1.default.createElement("h2", { className: "projects-title" }, "Projects"),
+                react_1.default.createElement("div", { className: "projects-grid" }, this.renderProjectList()))));
     }
 }
 exports.Projects = Projects;
@@ -33731,35 +33556,40 @@ const projectsData = [
     {
         title: "WeddingApp",
         description: "This is a client-server web app for managing wedding RSVPs, featuring guest list management, detailed guest info, and persistent data storage. Developed for CSE 331 coursework.",
-        link: "https://github.com/ramon-rcp/WeddingRsvp/tree/main"
+        link: "https://github.com/ramon-rcp/WeddingRsvp/tree/main",
+        linkText: "View Github"
     },
     {
         title: "DUET",
         description: "DUET is a Flutter-based app that connects users through shared music interests, offering Spotify-based matching, concert recommendations, and real-time chat via Firebase. It fosters connections through shared experiences.",
-        link: "https://github.com/ramon-rcp/DUET"
+        link: "https://github.com/ramon-rcp/DUET",
+        linkText: "View Github"
     },
     {
         title: "FlightApp",
         description: "FlightApp is a Java application that provides a search, booking, and management system for flights. The flight information is stored and managed in an SQL database. Developed for CSE 344 coursework.",
-        link: "https://github.com/ramon-rcp/FlightApp"
-    },
-    {
-        title: "Viking Axe",
-        description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
-        link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642"
+        link: "https://github.com/ramon-rcp/FlightApp",
+        linkText: "View Github"
     },
     {
         title: "Frogger",
         description: "Simplified version of the classic Frogger game using SystemVerilog and an FPGA development board. The goal is to help a frog safely cross a busy road filled with cars — perfect for training wildlife! Developed for CSE 369 coursework.",
-        link: "https://github.com/ramon-rcp/Frogger"
+        link: "https://github.com/ramon-rcp/Frogger",
+        linkText: "View Github"
     },
     {
         title: "Tic Tac Toe",
         description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
         link: "https://github.com/ramon-rcp/tictactoe"
-    }
+    },
+    {
+        title: "Viking Axe",
+        description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
+        link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642",
+        linkText: "View Sketchfab"
+    },
 ];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvamVjdHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvUHJvamVjdHMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsK0NBQXlDO0FBQ3pDLHdCQUFxQjtBQUNyQiwwQkFBd0I7QUFFeEIsTUFBYSxRQUFTLFNBQVEsaUJBQWlCO0lBQzNDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFrQmpCLHNCQUFpQixHQUFHLEdBQXVCLEVBQUU7WUFDekMsTUFBTSxRQUFRLEdBQXlCLFlBQVksQ0FBQyxHQUFHLENBQUMsQ0FBQyxPQUFPLEVBQUUsS0FBSyxFQUFFLEVBQUU7Z0JBQ3ZFLE9BQU8sQ0FDSCx1Q0FBSyxTQUFTLEVBQUMsY0FBYyxFQUFDLEdBQUcsRUFBRSxLQUFLO29CQUNwQywwQ0FBSyxPQUFPLENBQUMsS0FBSyxDQUFNO29CQUN4Qix5Q0FBSSxPQUFPLENBQUMsV0FBVyxDQUFLO29CQUM1QixxQ0FBRyxJQUFJLEVBQUUsT0FBTyxDQUFDLElBQUksRUFBRSxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUIsbUJBQWlCLENBQy9FLENBQ1QsQ0FBQztZQUNOLENBQUMsQ0FBQyxDQUFBO1lBQ0YsT0FBTyx1Q0FBSyxTQUFTLEVBQUMsZUFBZSxJQUNoQyxRQUFRLENBQ1AsQ0FBQTtRQUNWLENBQUMsQ0FBQTtRQTlCRyxJQUFJLENBQUMsS0FBSyxHQUFHO1lBQ1QsSUFBSSxFQUFFLE9BQU87U0FDaEIsQ0FBQztJQUNOLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUNILHVDQUFLLFNBQVMsRUFBQyxVQUFVO1lBQ3JCLDBDQUFRLFNBQVMsRUFBQyxpQkFBaUI7Z0JBQy9CLHFEQUFpQjtnQkFDakIscUNBQUcsU0FBUyxFQUFDLFNBQVMsNEJBQTBCLENBQzNDO1lBQ1IsSUFBSSxDQUFDLGlCQUFpQixFQUFFLENBQ3ZCLENBQ1QsQ0FBQztJQUNOLENBQUM7Q0FnQko7QUFsQ0QsNEJBa0NDO0FBR0QsTUFBTSxZQUFZLEdBQUc7SUFDakI7UUFDSSxLQUFLLEVBQUUsWUFBWTtRQUNuQixXQUFXLEVBQUUsa0xBQWtMO1FBQy9MLElBQUksRUFBRSxvREFBb0Q7S0FDN0Q7SUFDRDtRQUNJLEtBQUssRUFBRSxNQUFNO1FBQ2IsV0FBVyxFQUFFLCtOQUErTjtRQUM1TyxJQUFJLEVBQUUsbUNBQW1DO0tBQzVDO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsV0FBVztRQUNsQixXQUFXLEVBQUUsd01BQXdNO1FBQ3JOLElBQUksRUFBRSx3Q0FBd0M7S0FDakQ7SUFDRDtRQUNJLEtBQUssRUFBRSxZQUFZO1FBQ25CLFdBQVcsRUFBRSxzS0FBc0s7UUFDbkwsSUFBSSxFQUFFLDZFQUE2RTtLQUN0RjtJQUNEO1FBQ0ksS0FBSyxFQUFFLFNBQVM7UUFDaEIsV0FBVyxFQUFFLDJPQUEyTztRQUN4UCxJQUFJLEVBQUUsc0NBQXNDO0tBQy9DO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsYUFBYTtRQUNwQixXQUFXLEVBQUUsOFFBQThRO1FBQzNSLElBQUksRUFBRSx3Q0FBd0M7S0FDakQ7Q0FDSixDQUFBIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvamVjdHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvUHJvamVjdHMudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsK0NBQXlDO0FBQ3pDLHdCQUFxQjtBQUVyQixNQUFhLFFBQVMsU0FBUSxpQkFBaUI7SUFDM0MsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztRQW1CakIsc0JBQWlCLEdBQUcsR0FBdUIsRUFBRTtZQUN6QyxNQUFNLFFBQVEsR0FBeUIsWUFBWSxDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sRUFBRSxLQUFLLEVBQUUsRUFBRTtnQkFDdkUsT0FBTyxDQUNILHVDQUFLLFNBQVMsRUFBQyxjQUFjLEVBQUMsR0FBRyxFQUFFLEtBQUs7b0JBQ3BDLHNDQUFJLFNBQVMsRUFBQyxlQUFlLElBQUUsT0FBTyxDQUFDLEtBQUssQ0FBTTtvQkFDbEQscUNBQUcsU0FBUyxFQUFDLHFCQUFxQixJQUFFLE9BQU8sQ0FBQyxXQUFXLENBQUs7b0JBQzVELHFDQUFHLElBQUksRUFBRSxPQUFPLENBQUMsSUFBSSxFQUFFLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixFQUFDLFNBQVMsRUFBQyxNQUFNLG1CQUFpQixDQUNoRyxDQUNULENBQUM7WUFDTixDQUFDLENBQUMsQ0FBQTtZQUNGLE9BQU8sdUNBQUssU0FBUyxFQUFDLGVBQWUsSUFDaEMsUUFBUSxDQUNQLENBQUE7UUFDVixDQUFDLENBQUE7UUEvQkcsSUFBSSxDQUFDLEtBQUssR0FBRztZQUNULElBQUksRUFBRSxPQUFPO1NBQ2hCLENBQUM7SUFDTixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCwyQ0FBUyxTQUFTLEVBQUMsVUFBVSxFQUFDLEVBQUUsRUFBQyxVQUFVO1lBQzNDLHVDQUFLLFNBQVMsRUFBQyxXQUFXO2dCQUN4QixzQ0FBSSxTQUFTLEVBQUMsZ0JBQWdCLGVBQWM7Z0JBQzVDLHVDQUFLLFNBQVMsRUFBQyxlQUFlLElBQzNCLElBQUksQ0FBQyxpQkFBaUIsRUFBRSxDQUNyQixDQUNGLENBQ0UsQ0FDWCxDQUFDO0lBQ04sQ0FBQztDQWdCSjtBQW5DRCw0QkFtQ0M7QUFHRCxNQUFNLFlBQVksR0FBRztJQUNqQjtRQUNJLEtBQUssRUFBRSxZQUFZO1FBQ25CLFdBQVcsRUFBRSxrTEFBa0w7UUFDL0wsSUFBSSxFQUFFLG9EQUFvRDtRQUMxRCxRQUFRLEVBQUUsYUFBYTtLQUMxQjtJQUNEO1FBQ0ksS0FBSyxFQUFFLE1BQU07UUFDYixXQUFXLEVBQUUsK05BQStOO1FBQzVPLElBQUksRUFBRSxtQ0FBbUM7UUFDekMsUUFBUSxFQUFFLGFBQWE7S0FDMUI7SUFDRDtRQUNJLEtBQUssRUFBRSxXQUFXO1FBQ2xCLFdBQVcsRUFBRSx3TUFBd007UUFDck4sSUFBSSxFQUFFLHdDQUF3QztRQUM5QyxRQUFRLEVBQUUsYUFBYTtLQUMxQjtJQUNEO1FBQ0ksS0FBSyxFQUFFLFNBQVM7UUFDaEIsV0FBVyxFQUFFLDJPQUEyTztRQUN4UCxJQUFJLEVBQUUsc0NBQXNDO1FBQzVDLFFBQVEsRUFBRSxhQUFhO0tBQzFCO0lBQ0Q7UUFDSSxLQUFLLEVBQUUsYUFBYTtRQUNwQixXQUFXLEVBQUUsOFFBQThRO1FBQzNSLElBQUksRUFBRSx3Q0FBd0M7S0FDakQ7SUFDRDtRQUNJLEtBQUssRUFBRSxZQUFZO1FBQ25CLFdBQVcsRUFBRSxzS0FBc0s7UUFDbkwsSUFBSSxFQUFFLDZFQUE2RTtRQUNuRixRQUFRLEVBQUUsZ0JBQWdCO0tBQzdCO0NBQ0osQ0FBQSJ9
 
 /***/ }),
 
@@ -33776,13 +33606,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const client_1 = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-const Portfolio_1 = __webpack_require__(/*! ./Portfolio */ "./src/Portfolio.tsx");
+// import { Portfolio } from './Portfolio';
+const App_1 = __webpack_require__(/*! ./App */ "./src/App.tsx");
 const main = document.getElementById('main');
 if (main === null)
     throw new Error("Uh oh! HTML is missing 'main' element");
 const root = (0, client_1.createRoot)(main);
-root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsa0RBQTBCO0FBQzFCLDZDQUFvRDtBQUNwRCwyQ0FBd0M7QUFHeEMsTUFBTSxJQUFJLEdBQXFCLFFBQVEsQ0FBQyxjQUFjLENBQUMsTUFBTSxDQUFDLENBQUM7QUFDL0QsSUFBSSxJQUFJLEtBQUssSUFBSTtJQUNmLE1BQU0sSUFBSSxLQUFLLENBQUMsdUNBQXVDLENBQUMsQ0FBQztBQUUzRCxNQUFNLElBQUksR0FBUyxJQUFBLG1CQUFVLEVBQUMsSUFBSSxDQUFDLENBQUM7QUFDcEMsSUFBSSxDQUFDLE1BQU0sQ0FBQyw4QkFBQyxxQkFBUyxPQUFFLENBQUMsQ0FBQyJ9
+root.render(react_1.default.createElement(App_1.App, null));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsa0RBQTBCO0FBQzFCLDZDQUFvRDtBQUNwRCwyQ0FBMkM7QUFDM0MsK0JBQTRCO0FBRzVCLE1BQU0sSUFBSSxHQUFxQixRQUFRLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBQy9ELElBQUksSUFBSSxLQUFLLElBQUk7SUFDZixNQUFNLElBQUksS0FBSyxDQUFDLHVDQUF1QyxDQUFDLENBQUM7QUFFM0QsTUFBTSxJQUFJLEdBQVMsSUFBQSxtQkFBVSxFQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLElBQUksQ0FBQyxNQUFNLENBQUMsOEJBQUMsU0FBRyxPQUFFLENBQUMsQ0FBQyJ9
 
 /***/ })
 
@@ -33867,4 +33698,4 @@ root.render(react_1.default.createElement(Portfolio_1.Portfolio, null));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.0284ba7462637ac1e4e4.js.map
+//# sourceMappingURL=main.bd56d897a39d35207fda.js.map
