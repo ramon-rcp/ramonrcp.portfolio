@@ -1,7 +1,7 @@
 {
-  "name": "cse331-hw-wedding-client",
+  "name": "ramon-portfolio",
   "version": "0.0.1",
-  "description": "CSE 331 Wedding",
+  "description": "Ramon Costa-Patel's Portfolio",
   "main": "",
   "scripts": {
     "build": "webpack --config src/webpack.config.js",
