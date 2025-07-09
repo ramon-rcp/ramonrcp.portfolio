@@ -65,6 +65,11 @@ const projectsData = [
         linkText: "View Github"
     },
     {
+        title: "Tic Tac Toe",
+        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
+        link: "https://github.com/ramon-rcp/tictactoe"
+    },
+    {
         title: "Viking Axe",
         description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
         link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642",
