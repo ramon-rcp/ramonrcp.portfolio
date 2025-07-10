@@ -54,8 +54,8 @@ class Hero extends Component<{}, {}> {
                     />
                     <h1 className="hero-title">Ramon Costa-Patel</h1>
                     <p className="hero-subtitle">Computer Engineer</p>
+                    <a href="mailto:ramoncostapatel@gmail.com" className="contact-button">Contact Me</a>
                     <div className="hero-links">
-                        <a href="mailto:ramoncostapatel@gmail.com" className="link">Email</a>
                         <a href="https://github.com/ramon-rcp" target="_blank" rel="noopener noreferrer" className="link">GitHub</a>
                         <a href="https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/" target="_blank" rel="noopener noreferrer" className="link">LinkedIn</a>
                     </div>

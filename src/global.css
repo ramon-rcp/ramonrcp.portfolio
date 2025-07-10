@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
+  /*****************/
   /* Hero Section */
   .hero {
     min-height: 100vh; /* min-h-screen */
@@ -44,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem; /* space-x-4 */
+    padding: 1rem;
   }
   
   .hero .link a {
@@ -54,7 +56,21 @@ body {
   .hero .link a:hover {
     text-decoration: underline; /* hover:underline */
   }
-  
+
+  .contact-button {
+    background-color: #3182ce; /* bg-blue-600 */
+    color: #ffffff; /* text-white */
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+    border-radius: 0.375rem; /* rounded-md */
+    font-weight: 600; /* font-semibold */
+    text-decoration: none;
+  }
+
+  .contact-button:hover {
+    background-color: #2b6cb0; /* bg-blue-700 on hover */
+  }
+
+  /*****************/
   /* About Section */
   .about {
     padding: 4rem 2rem; /* py-16 px-8 */
@@ -71,6 +87,7 @@ body {
     font-weight: 600; /* font-semibold */
     margin-bottom: 1rem; /* mb-4 */
   }
+
   
   /* Footer */
   footer {
@@ -81,6 +98,7 @@ body {
     color: #a0aec0; /* text-gray-500 */
   }
 
+  /********************/
   /* Projects Section */
 .projects {
     padding: 4rem 2rem; /* py-16 px-8 */
@@ -155,6 +173,7 @@ body {
     text-decoration: underline; /* hover:underline */
   }
 
+  /*****************/
   /* Header Styles */
 .header {
     position: fixed;
