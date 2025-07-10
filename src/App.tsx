@@ -4,6 +4,7 @@ import './global.css'
 import logo from '../public/logo.png'
 import github from '../public/github-mark.png'
 import linkedin from '../public/InBug-Black.png'
+import resume from '../public/RCP_resume.pdf'
 
 
 export class App extends Component<{}, {}> {
@@ -34,6 +35,7 @@ class Header extends Component<{}, {}> {
                     <a href="#hero" className="nav-link">Home</a>
                     <a href="#about" className="nav-link">About</a>
                     <a href="#projects" className="nav-link">Projects</a>
+                    <a href={resume} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
                 </nav>
             </header>
         );
