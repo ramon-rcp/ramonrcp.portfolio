@@ -8,6 +8,10 @@ body {
     padding: 0;
   }
 
+  html {
+    scroll-behavior: smooth;;
+  }
+
   /*****************/
   /* Hero Section */
   .hero {
@@ -210,4 +214,32 @@ body {
   
   .nav-link:hover {
     color: #007bff; /* Change color on hover */
+  }
+
+  /******************/
+  /* Skills section */
+  #skills {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .skills-tags span {
+    background: #f1f1f1;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
   }
