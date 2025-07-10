@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Projects } from "./Projects";
 import './global.css'
 import logo from '../public/logo.png'
+import github from '../public/github-mark.png'
+import linkedin from '../public/InBug-Black.png'
 
 
 export class App extends Component<{}, {}> {
@@ -51,13 +53,18 @@ class Hero extends Component<{}, {}> {
                     <img
                         src={logo}
                         alt="Your profile"
+                        className="pfp"
                     />
                     <h1 className="hero-title">Ramon Costa-Patel</h1>
                     <p className="hero-subtitle">Computer Engineer</p>
                     <a href="mailto:ramoncostapatel@gmail.com" className="contact-button">Contact Me</a>
                     <div className="hero-links">
-                        <a href="https://github.com/ramon-rcp" target="_blank" rel="noopener noreferrer" className="link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/" target="_blank" rel="noopener noreferrer" className="link">LinkedIn</a>
+                        <a href="https://github.com/ramon-rcp" target="_blank" rel="noopener noreferrer">
+                            <img src={github} alt="GitHub" className="github-icon"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="LinkedIn" className="linkedin-icon"/>
+                        </a>
                     </div>
                 </div>
             </section>
