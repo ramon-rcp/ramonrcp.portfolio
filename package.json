@@ -1,7 +1,7 @@
 {
   "name": "ramon-portfolio",
   "version": "0.0.1",
-  "description": "ramon portfolio",
+  "description": "Ramon Costa-Patel's Portfolio",
   "main": "",
   "scripts": {
     "build": "webpack --config src/webpack.config.js",
