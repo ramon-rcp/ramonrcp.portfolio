@@ -33485,6 +33485,7 @@ const github_mark_png_1 = __importDefault(__webpack_require__(/*! ../public/gith
 const InBug_Black_png_1 = __importDefault(__webpack_require__(/*! ../public/InBug-Black.png */ "./public/InBug-Black.png"));
 const RCP_resume_pdf_1 = __importDefault(__webpack_require__(/*! ../public/RCP_resume.pdf */ "./public/RCP_resume.pdf"));
 const Skills_1 = __webpack_require__(/*! ./Skills */ "./src/Skills.tsx");
+const Courses_1 = __webpack_require__(/*! ./Courses */ "./src/Courses.tsx");
 class App extends react_1.Component {
     constructor(props) {
         super(props);
@@ -33496,6 +33497,7 @@ class App extends react_1.Component {
             react_1.default.createElement(About, null),
             react_1.default.createElement(Projects_1.Projects, null),
             react_1.default.createElement(Skills_1.Skills, null),
+            react_1.default.createElement(Courses_1.Courses, null),
             react_1.default.createElement("footer", { className: "footer" }, "\u00A9 2025 Ramon Costa-Patel. All rights reserved.")));
     }
 }
@@ -33508,6 +33510,7 @@ class Header extends react_1.Component {
                 react_1.default.createElement("a", { href: "#about", className: "nav-link" }, "About"),
                 react_1.default.createElement("a", { href: "#projects", className: "nav-link" }, "Projects"),
                 react_1.default.createElement("a", { href: "#skills", className: "nav-link" }, "Skills"),
+                react_1.default.createElement("a", { href: "#courses", className: "nav-link" }, "Courses"),
                 react_1.default.createElement("a", { href: RCP_resume_pdf_1.default, target: "_blank", rel: "noopener noreferrer", className: "nav-link" }, "Resume"))));
     }
 }
@@ -33541,7 +33544,85 @@ class About extends react_1.Component {
                 react_1.default.createElement("p", null, "Outside of engineering, I\u2019m a huge fan of soccer (Visca el Bar\u00E7a!), love playing basketball, and can get lost in a great video game for hours (such as Elden Ring). I\u2019m especially drawn to the intersection of creativity and logic, whether it\u2019s crafting an intuitive user interface or debugging low-level hardware code."))));
     }
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0FwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMseUNBQXNDO0FBQ3RDLHdCQUFxQjtBQUNyQixrRUFBcUM7QUFDckMsZ0ZBQThDO0FBQzlDLGdGQUFnRDtBQUNoRCw4RUFBNkM7QUFDN0MscUNBQWtDO0FBR2xDLE1BQWEsR0FBSSxTQUFRLGlCQUFpQjtJQUN0QyxZQUFZLEtBQVM7UUFDakIsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pCLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUNILHdDQUFNLFNBQVMsRUFBQyxLQUFLO1lBQ2pCLDhCQUFDLE1BQU0sT0FBRTtZQUNULDhCQUFDLElBQUksT0FBRztZQUNSLDhCQUFDLEtBQUssT0FBRTtZQUNSLDhCQUFDLG1CQUFRLE9BQUU7WUFDWCw4QkFBQyxlQUFNLE9BQUU7WUFDVCwwQ0FBUSxTQUFTLEVBQUMsUUFBUSwwREFFN0IsQ0FDTSxDQUNWLENBQUE7SUFDTCxDQUFDO0NBQ0o7QUFuQkQsa0JBbUJDO0FBRUQsTUFBTSxNQUFPLFNBQVEsaUJBQWlCO0lBQ2xDLE1BQU07UUFDRixPQUFPLENBQ0gsMENBQVEsU0FBUyxFQUFDLFFBQVE7WUFDdEIsdUNBQUssU0FBUyxFQUFDLEtBQUs7Z0JBQ2hCLHFDQUFHLElBQUksRUFBQyxPQUFPLEVBQUMsU0FBUyxFQUFDLFVBQVUsV0FBUztnQkFDN0MscUNBQUcsSUFBSSxFQUFDLFFBQVEsRUFBQyxTQUFTLEVBQUMsVUFBVSxZQUFVO2dCQUMvQyxxQ0FBRyxJQUFJLEVBQUMsV0FBVyxFQUFDLFNBQVMsRUFBQyxVQUFVLGVBQWE7Z0JBQ3JELHFDQUFHLElBQUksRUFBQyxTQUFTLEVBQUMsU0FBUyxFQUFDLFVBQVUsYUFBVztnQkFDakQscUNBQUcsSUFBSSxFQUFFLHdCQUFNLEVBQUUsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLEVBQUMsU0FBUyxFQUFDLFVBQVUsYUFBVyxDQUN4RixDQUNELENBQ1osQ0FBQztJQUNOLENBQUM7Q0FDSjtBQUdELE1BQU0sSUFBSyxTQUFRLGlCQUFpQjtJQUNoQyxZQUFZLEtBQVM7UUFDakIsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pCLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUNILDJDQUFTLFNBQVMsRUFBQyxNQUFNLEVBQUMsRUFBRSxFQUFDLE1BQU07WUFDL0IsdUNBQUssU0FBUyxFQUFDLGdCQUFnQjtnQkFDM0IsdUNBQ0ksR0FBRyxFQUFFLGtCQUFJLEVBQ1QsR0FBRyxFQUFDLGNBQWMsRUFDbEIsU0FBUyxFQUFDLEtBQUssR0FDakI7Z0JBQ0Ysc0NBQUksU0FBUyxFQUFDLFlBQVksd0JBQXVCO2dCQUNqRCxxQ0FBRyxTQUFTLEVBQUMsZUFBZSx3QkFBc0I7Z0JBQ2xELHFDQUFHLElBQUksRUFBQyxrQ0FBa0MsRUFBQyxTQUFTLEVBQUMsZ0JBQWdCLGlCQUFlO2dCQUNwRix1Q0FBSyxTQUFTLEVBQUMsWUFBWTtvQkFDdkIscUNBQUcsSUFBSSxFQUFDLDhCQUE4QixFQUFDLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQjt3QkFDNUUsdUNBQUssR0FBRyxFQUFFLHlCQUFNLEVBQUUsR0FBRyxFQUFDLFFBQVEsRUFBQyxTQUFTLEVBQUMsYUFBYSxHQUFFLENBQ3hEO29CQUNKLHFDQUFHLElBQUksRUFBQyxpRUFBaUUsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUI7d0JBQy9HLHVDQUFLLEdBQUcsRUFBRSx5QkFBUSxFQUFFLEdBQUcsRUFBQyxVQUFVLEVBQUMsU0FBUyxFQUFDLGVBQWUsR0FBRSxDQUM5RCxDQUNGLENBQ0osQ0FDQSxDQUNiLENBQUM7SUFDTixDQUFDO0NBQ0o7QUFFRCxNQUFNLEtBQU0sU0FBUSxpQkFBaUI7SUFDakMsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNqQixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCwyQ0FBUyxTQUFTLEVBQUMsT0FBTyxFQUFDLEVBQUUsRUFBQyxPQUFPO1lBQ3JDLHVDQUFLLFNBQVMsRUFBQyxXQUFXO2dCQUN0QixzQ0FBSSxTQUFTLEVBQUMsYUFBYSxlQUFjO2dCQUN6QyxzWkFBa1c7Z0JBQ2xXLDZYQUFvVSxDQUNsVSxDQUNBLENBQ1QsQ0FBQztJQUNOLENBQUM7Q0FDSiJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL0FwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQ0FBeUM7QUFDekMseUNBQXNDO0FBQ3RDLHdCQUFxQjtBQUNyQixrRUFBcUM7QUFDckMsZ0ZBQThDO0FBQzlDLGdGQUFnRDtBQUNoRCw4RUFBNkM7QUFDN0MscUNBQWtDO0FBQ2xDLHVDQUFvQztBQUdwQyxNQUFhLEdBQUksU0FBUSxpQkFBaUI7SUFDdEMsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNqQixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCx3Q0FBTSxTQUFTLEVBQUMsS0FBSztZQUNqQiw4QkFBQyxNQUFNLE9BQUU7WUFDVCw4QkFBQyxJQUFJLE9BQUc7WUFDUiw4QkFBQyxLQUFLLE9BQUU7WUFDUiw4QkFBQyxtQkFBUSxPQUFFO1lBQ1gsOEJBQUMsZUFBTSxPQUFFO1lBQ1QsOEJBQUMsaUJBQU8sT0FBRTtZQUNWLDBDQUFRLFNBQVMsRUFBQyxRQUFRLDBEQUU3QixDQUNNLENBQ1YsQ0FBQTtJQUNMLENBQUM7Q0FDSjtBQXBCRCxrQkFvQkM7QUFFRCxNQUFNLE1BQU8sU0FBUSxpQkFBaUI7SUFDbEMsTUFBTTtRQUNGLE9BQU8sQ0FDSCwwQ0FBUSxTQUFTLEVBQUMsUUFBUTtZQUN0Qix1Q0FBSyxTQUFTLEVBQUMsS0FBSztnQkFDaEIscUNBQUcsSUFBSSxFQUFDLE9BQU8sRUFBQyxTQUFTLEVBQUMsVUFBVSxXQUFTO2dCQUM3QyxxQ0FBRyxJQUFJLEVBQUMsUUFBUSxFQUFDLFNBQVMsRUFBQyxVQUFVLFlBQVU7Z0JBQy9DLHFDQUFHLElBQUksRUFBQyxXQUFXLEVBQUMsU0FBUyxFQUFDLFVBQVUsZUFBYTtnQkFDckQscUNBQUcsSUFBSSxFQUFDLFNBQVMsRUFBQyxTQUFTLEVBQUMsVUFBVSxhQUFXO2dCQUNqRCxxQ0FBRyxJQUFJLEVBQUMsVUFBVSxFQUFDLFNBQVMsRUFBQyxVQUFVLGNBQVk7Z0JBQ25ELHFDQUFHLElBQUksRUFBRSx3QkFBTSxFQUFFLE1BQU0sRUFBQyxRQUFRLEVBQUMsR0FBRyxFQUFDLHFCQUFxQixFQUFDLFNBQVMsRUFBQyxVQUFVLGFBQVcsQ0FDeEYsQ0FDRCxDQUNaLENBQUM7SUFDTixDQUFDO0NBQ0o7QUFHRCxNQUFNLElBQUssU0FBUSxpQkFBaUI7SUFDaEMsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNqQixDQUFDO0lBRUQsTUFBTTtRQUNGLE9BQU8sQ0FDSCwyQ0FBUyxTQUFTLEVBQUMsTUFBTSxFQUFDLEVBQUUsRUFBQyxNQUFNO1lBQy9CLHVDQUFLLFNBQVMsRUFBQyxnQkFBZ0I7Z0JBQzNCLHVDQUNJLEdBQUcsRUFBRSxrQkFBSSxFQUNULEdBQUcsRUFBQyxjQUFjLEVBQ2xCLFNBQVMsRUFBQyxLQUFLLEdBQ2pCO2dCQUNGLHNDQUFJLFNBQVMsRUFBQyxZQUFZLHdCQUF1QjtnQkFDakQscUNBQUcsU0FBUyxFQUFDLGVBQWUsd0JBQXNCO2dCQUNsRCxxQ0FBRyxJQUFJLEVBQUMsa0NBQWtDLEVBQUMsU0FBUyxFQUFDLGdCQUFnQixpQkFBZTtnQkFDcEYsdUNBQUssU0FBUyxFQUFDLFlBQVk7b0JBQ3ZCLHFDQUFHLElBQUksRUFBQyw4QkFBOEIsRUFBQyxNQUFNLEVBQUMsUUFBUSxFQUFDLEdBQUcsRUFBQyxxQkFBcUI7d0JBQzVFLHVDQUFLLEdBQUcsRUFBRSx5QkFBTSxFQUFFLEdBQUcsRUFBQyxRQUFRLEVBQUMsU0FBUyxFQUFDLGFBQWEsR0FBRSxDQUN4RDtvQkFDSixxQ0FBRyxJQUFJLEVBQUMsaUVBQWlFLEVBQUMsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCO3dCQUMvRyx1Q0FBSyxHQUFHLEVBQUUseUJBQVEsRUFBRSxHQUFHLEVBQUMsVUFBVSxFQUFDLFNBQVMsRUFBQyxlQUFlLEdBQUUsQ0FDOUQsQ0FDRixDQUNKLENBQ0EsQ0FDYixDQUFDO0lBQ04sQ0FBQztDQUNKO0FBRUQsTUFBTSxLQUFNLFNBQVEsaUJBQWlCO0lBQ2pDLFlBQVksS0FBUztRQUNqQixLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDakIsQ0FBQztJQUVELE1BQU07UUFDRixPQUFPLENBQ0gsMkNBQVMsU0FBUyxFQUFDLE9BQU8sRUFBQyxFQUFFLEVBQUMsT0FBTztZQUNyQyx1Q0FBSyxTQUFTLEVBQUMsV0FBVztnQkFDdEIsc0NBQUksU0FBUyxFQUFDLGFBQWEsZUFBYztnQkFDekMsc1pBQWtXO2dCQUNsVyw2WEFBb1UsQ0FDbFUsQ0FDQSxDQUNULENBQUM7SUFDTixDQUFDO0NBQ0oifQ==
+
+/***/ }),
+
+/***/ "./src/Courses.tsx":
+/*!*************************!*\
+  !*** ./src/Courses.tsx ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Courses = void 0;
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const react_2 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+__webpack_require__(/*! ./global.css */ "./src/global.css");
+class Courses extends react_1.Component {
+    constructor(props) {
+        super(props);
+        this.renderSkills = () => {
+            return courseList.map((course) => (react_2.default.createElement("div", { key: course.name, className: "course-card" },
+                react_2.default.createElement("h3", null, course.title),
+                react_2.default.createElement("p", null, course.name),
+                react_2.default.createElement("a", { href: course.link, target: "_blank", rel: "noopener noreferrer" }, "Learn More"))));
+        };
+    }
+    render() {
+        return react_2.default.createElement("section", { id: "courses" },
+            react_2.default.createElement("h2", null, "Courses"),
+            react_2.default.createElement("div", { className: "courses-grid" }, this.renderSkills()));
+    }
+}
+exports.Courses = Courses;
+const courseList = [
+    {
+        title: "CSE 331",
+        name: "Software Design and Implementation",
+        link: "https://courses.cs.washington.edu/courses/cse331/"
+    },
+    {
+        title: "CSE 344",
+        name: "Into to Data Management",
+        link: "https://courses.cs.washington.edu/courses/cse344/"
+    },
+    {
+        title: "CSE 369",
+        name: "Intro to Digital Design",
+        link: "https://courses.cs.washington.edu/courses/cse369/"
+    },
+    {
+        title: "CSE 332",
+        name: "Data Structures and Parallelism",
+        link: "https://courses.cs.washington.edu/courses/cse332/"
+    },
+    {
+        title: "CSE 403",
+        name: "Software Engineering",
+        link: "https://courses.cs.washington.edu/courses/cse403/"
+    },
+    {
+        title: "CSE 421",
+        name: "Intro to Algorithms",
+        link: "https://courses.cs.washington.edu/courses/cse421/"
+    },
+    {
+        title: "CSE 351",
+        name: "The Hardware/Software Interface",
+        link: "https://courses.cs.washington.edu/courses/cse351/"
+    },
+    {
+        title: "MATH 300",
+        name: "Mathematical reasoning",
+        link: "https://math.washington.edu/math300"
+    },
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ291cnNlcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9Db3Vyc2VzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxpQ0FBa0M7QUFDbEMsa0RBQTBCO0FBQzFCLHdCQUFzQjtBQUV0QixNQUFhLE9BQVEsU0FBUSxpQkFBaUI7SUFDMUMsWUFBWSxLQUFTO1FBQ2pCLEtBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQTtRQVloQixpQkFBWSxHQUFHLEdBQXlCLEVBQUU7WUFDdEMsT0FBTyxVQUFVLENBQUMsR0FBRyxDQUFDLENBQUMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxDQUM5Qix1Q0FBSyxHQUFHLEVBQUUsTUFBTSxDQUFDLElBQUksRUFBRSxTQUFTLEVBQUMsYUFBYTtnQkFDMUMsMENBQUssTUFBTSxDQUFDLEtBQUssQ0FBTTtnQkFDdkIseUNBQUksTUFBTSxDQUFDLElBQUksQ0FBSztnQkFDcEIscUNBQUcsSUFBSSxFQUFFLE1BQU0sQ0FBQyxJQUFJLEVBQUUsTUFBTSxFQUFDLFFBQVEsRUFBQyxHQUFHLEVBQUMscUJBQXFCLGlCQUFlLENBQzVFLENBQ1QsQ0FBQyxDQUFDO1FBQ1AsQ0FBQyxDQUFBO0lBbkJELENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTywyQ0FBUyxFQUFFLEVBQUMsU0FBUztZQUN4QixvREFBZ0I7WUFDaEIsdUNBQUssU0FBUyxFQUFDLGNBQWMsSUFDeEIsSUFBSSxDQUFDLFlBQVksRUFBRSxDQUNsQixDQUNBLENBQUE7SUFDZCxDQUFDO0NBV0o7QUF2QkQsMEJBdUJDO0FBRUQsTUFBTSxVQUFVLEdBQWtEO0lBQy9EO1FBQ0MsS0FBSyxFQUFFLFNBQVM7UUFDaEIsSUFBSSxFQUFFLG9DQUFvQztRQUMxQyxJQUFJLEVBQUUsbURBQW1EO0tBQ3pEO0lBQ0Q7UUFDQyxLQUFLLEVBQUUsU0FBUztRQUNoQixJQUFJLEVBQUUseUJBQXlCO1FBQy9CLElBQUksRUFBRSxtREFBbUQ7S0FDekQ7SUFDRDtRQUNDLEtBQUssRUFBRSxTQUFTO1FBQ2hCLElBQUksRUFBRSx5QkFBeUI7UUFDL0IsSUFBSSxFQUFFLG1EQUFtRDtLQUN6RDtJQUNEO1FBQ0MsS0FBSyxFQUFFLFNBQVM7UUFDaEIsSUFBSSxFQUFFLGlDQUFpQztRQUN2QyxJQUFJLEVBQUUsbURBQW1EO0tBQ3pEO0lBQ0Q7UUFDQyxLQUFLLEVBQUUsU0FBUztRQUNoQixJQUFJLEVBQUUsc0JBQXNCO1FBQzVCLElBQUksRUFBRSxtREFBbUQ7S0FDekQ7SUFDRDtRQUNDLEtBQUssRUFBRSxTQUFTO1FBQ2hCLElBQUksRUFBRSxxQkFBcUI7UUFDM0IsSUFBSSxFQUFFLG1EQUFtRDtLQUN6RDtJQUNEO1FBQ0MsS0FBSyxFQUFFLFNBQVM7UUFDaEIsSUFBSSxFQUFFLGlDQUFpQztRQUN2QyxJQUFJLEVBQUUsbURBQW1EO0tBQ3pEO0lBQ0Q7UUFDQyxLQUFLLEVBQUUsVUFBVTtRQUNqQixJQUFJLEVBQUUsd0JBQXdCO1FBQzlCLElBQUksRUFBRSxxQ0FBcUM7S0FDM0M7Q0FDSCxDQUFBIn0=
 
 /***/ }),
 
@@ -33805,4 +33886,4 @@ root.render(react_1.default.createElement(App_1.App, null));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.9c8e4f463abdc5a8b8a2.js.map
+//# sourceMappingURL=main.965e2d065637f91c9ca3.js.map
