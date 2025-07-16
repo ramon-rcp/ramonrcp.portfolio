@@ -6,6 +6,7 @@ import github from '../public/github-mark.png'
 import linkedin from '../public/InBug-Black.png'
 import resume from '../public/RCP_resume.pdf'
 import { Skills } from "./Skills";
+import { Courses } from "./Courses";
 
 
 export class App extends Component<{}, {}> {
@@ -21,6 +22,7 @@ export class App extends Component<{}, {}> {
                 <About/>
                 <Projects/>
                 <Skills/>
+                <Courses/>
                 <footer className="footer">
       © 2025 Ramon Costa-Patel. All rights reserved.
     </footer>
@@ -38,6 +40,7 @@ class Header extends Component<{}, {}> {
                     <a href="#about" className="nav-link">About</a>
                     <a href="#projects" className="nav-link">Projects</a>
                     <a href="#skills" className="nav-link">Skills</a>
+                    <a href="#courses" className="nav-link">Courses</a>
                     <a href={resume} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
                 </nav>
             </header>
