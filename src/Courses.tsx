@@ -68,4 +68,9 @@ const courseList: {title: string, name: string, link: string}[] = [
     name: "Mathematical reasoning",
     link: "https://math.washington.edu/math300"
    },
+   {
+    title: "EE 205",
+    name: "Introduction to Signal Conditioning",
+    link: "https://www.ece.uw.edu/abet/?id=4310"
+   },
 ]
