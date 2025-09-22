@@ -63,7 +63,7 @@ class Hero extends Component<{}, {}> {
                         alt="Your profile"
                         className="pfp"
                     />
-                    <h1 className="hero-title">Ramon Costa-Patel</h1>
+                    <h1 className="hero-title">Ramon Costa</h1>
                     <p className="hero-subtitle">Computer Engineer</p>
                     <a href="mailto:ramoncostapatel@gmail.com" className="contact-button">Contact Me</a>
                     <div className="hero-links">
