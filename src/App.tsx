@@ -70,7 +70,7 @@ class Hero extends Component<{}, {}> {
                         <a href="https://github.com/ramon-rcp" target="_blank" rel="noopener noreferrer">
                             <img src={github} alt="GitHub" className="github-icon"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/ramon-roshan-costa-patel-ab88b323b/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/ramon-r-costa-ab88b323b" target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="LinkedIn" className="linkedin-icon"/>
                         </a>
                     </div>
