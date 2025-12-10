@@ -19,8 +19,8 @@ export class Courses extends Component<{}, {}> {
     renderSkills = (): React.ReactElement[] => {
         return courseList.map((course) => (
             <div key={course.name} className="course-card">
-                <h3>{course.title}</h3>
-                <p>{course.name}</p>
+                <h3>{course.name}</h3>
+                <p>{course.title}</p>
                 <a href={course.link} target="_blank" rel="noopener noreferrer">Learn More</a>
             </div>
         ));
@@ -72,5 +72,15 @@ const courseList: {title: string, name: string, link: string}[] = [
     title: "EE 205",
     name: "Introduction to Signal Conditioning",
     link: "https://www.ece.uw.edu/abet/?id=4310"
+   },
+   {
+    title: "CSE 484",
+    name: "Computer Security",
+    link: "https://courses.cs.washington.edu/courses/cse484/"
+   },
+   {
+    title: "CSE 371",
+    name: "Design of Digital Circuits and Systems",
+    link: "https://courses.cs.washington.edu/courses/cse371/"
    },
 ]
