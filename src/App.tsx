@@ -4,7 +4,7 @@ import './global.css'
 import logo from '../public/headshot.png'
 import github from '../public/github-mark.png'
 import linkedin from '../public/InBug-Black.png'
-import resume from '../public/resume_rcp.pdf'
+import resume from '../public/Ramon_Costa_Resume.pdf'
 import { Skills } from "./Skills";
 import { Courses } from "./Courses";
 
