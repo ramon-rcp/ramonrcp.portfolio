@@ -16,6 +16,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./public/Ramon_Costa_Resume.pdf":
+/*!***************************************!*\
+  !*** ./public/Ramon_Costa_Resume.pdf ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "81deae12b93ef4b9ed5d68ad943169ea.pdf");
+
+/***/ }),
+
 /***/ "./public/github-mark.png":
 /*!********************************!*\
   !*** ./public/github-mark.png ***!
@@ -41,20 +55,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "8eb2696bd847354c878905b12c7c78ff.png");
-
-/***/ }),
-
-/***/ "./public/resume_rcp.pdf":
-/*!*******************************!*\
-  !*** ./public/resume_rcp.pdf ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ef8f0b149aebec159e50567334f319f3.pdf");
 
 /***/ }),
 
@@ -34799,7 +34799,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_headshot_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../public/headshot.png */ "./public/headshot.png");
 /* harmony import */ var _public_github_mark_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../public/github-mark.png */ "./public/github-mark.png");
 /* harmony import */ var _public_InBug_Black_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../public/InBug-Black.png */ "./public/InBug-Black.png");
-/* harmony import */ var _public_resume_rcp_pdf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../public/resume_rcp.pdf */ "./public/resume_rcp.pdf");
+/* harmony import */ var _public_Ramon_Costa_Resume_pdf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../public/Ramon_Costa_Resume.pdf */ "./public/Ramon_Costa_Resume.pdf");
 /* harmony import */ var _Skills__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Skills */ "./src/Skills.tsx");
 /* harmony import */ var _Courses__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Courses */ "./src/Courses.tsx");
 
@@ -34822,7 +34822,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 }
 class Header extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     render() {
-        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("header", { className: "header", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", { className: "nav", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#hero", className: "nav-link", children: "Home" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#about", className: "nav-link", children: "About" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#projects", className: "nav-link", children: "Projects" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#skills", className: "nav-link", children: "Skills" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#courses", className: "nav-link", children: "Courses" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: _public_resume_rcp_pdf__WEBPACK_IMPORTED_MODULE_7__["default"], target: "_blank", rel: "noopener noreferrer", className: "nav-link", children: "Resume" })] }) }));
+        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("header", { className: "header", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", { className: "nav", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#hero", className: "nav-link", children: "Home" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#about", className: "nav-link", children: "About" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#projects", className: "nav-link", children: "Projects" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#skills", className: "nav-link", children: "Skills" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: "#courses", className: "nav-link", children: "Courses" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: _public_Ramon_Costa_Resume_pdf__WEBPACK_IMPORTED_MODULE_7__["default"], target: "_blank", rel: "noopener noreferrer", className: "nav-link", children: "Resume" })] }) }));
     }
 }
 class Hero extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
@@ -35173,4 +35173,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK
 
 /******/ })()
 ;
-//# sourceMappingURL=main.e0208ba7d107417aa7c0.js.map
+//# sourceMappingURL=main.ff9a84f63654b8eb4f33.js.map
