@@ -51,7 +51,7 @@ const projectsData = [
         description: "Hearth & Horde Lockdown is an AR/VR wave-defense survival game where players can change their space in their very own home base. With fast paced combat and base building management, the game helps players learn how to arrange, defend, and upgrade spaces to survive. Developed for CSE 481 coursework.",
         link: "https://youtu.be/Tbk7C_Mrjfs?si=NIL5qhd23fv9KjXI",
         linkText: "View Gameplay"
-    }
+    },
     {
         title: "WeddingApp",
         description: "This is a client-server web app for managing wedding RSVPs, featuring guest list management, detailed guest info, and persistent data storage. Developed for CSE 331 coursework.",
