@@ -83,4 +83,29 @@ const courseList: {title: string, name: string, link: string}[] = [
     name: "Design of Digital Circuits and Systems",
     link: "https://courses.cs.washington.edu/courses/cse371/"
    },
+   {
+    title: "CSE 446",
+    name: "Machine Learning",
+    link: "https://courses.cs.washington.edu/courses/cse446/"
+   },
+   {
+    title: "CSE 478",
+    name: "Autonomous Robotics",
+    link: "https://courses.cs.washington.edu/courses/cse478/"
+   },
+   {
+    title: "CSE 444",
+    name: "Database Systems Internals",
+    link: "https://courses.cs.washington.edu/courses/cse444/"
+   },
+   {
+    title: "CSE 444",
+    name: "Database Systems Internals",
+    link: "https://courses.cs.washington.edu/courses/cse444/"
+   },
+   {
+    title: "CSE 481",
+    name: "Capstone Software Designs",
+    link: "https://courses.cs.washington.edu/courses/cse481v/26wi/"
+   },
 ]
