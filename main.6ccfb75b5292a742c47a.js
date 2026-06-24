@@ -34981,7 +34981,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
         super(props);
         this.renderProjectList = () => {
             const projList = projectsData.map((project, index) => {
-                return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "project-card", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: 'project-title', children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: 'project-description', children: project.description }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: project.link, target: "_blank", rel: "noopener noreferrer", className: 'link', children: "(project.linkText)" })] }, index));
+                return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "project-card", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: 'project-title', children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: 'project-description', children: project.description }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: project.link, target: "_blank", rel: "noopener noreferrer", className: 'link', children: project.linkText })] }, index));
             });
             return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'projects-grid', children: projList });
         };
@@ -35205,4 +35205,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK
 
 /******/ })()
 ;
-//# sourceMappingURL=main.5399a5356ecc17975f04.js.map
+//# sourceMappingURL=main.6ccfb75b5292a742c47a.js.map
