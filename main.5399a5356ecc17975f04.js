@@ -34929,6 +34929,31 @@ const courseList = [
         name: "Design of Digital Circuits and Systems",
         link: "https://courses.cs.washington.edu/courses/cse371/"
     },
+    {
+        title: "CSE 446",
+        name: "Machine Learning",
+        link: "https://courses.cs.washington.edu/courses/cse446/"
+    },
+    {
+        title: "CSE 478",
+        name: "Autonomous Robotics",
+        link: "https://courses.cs.washington.edu/courses/cse478/"
+    },
+    {
+        title: "CSE 444",
+        name: "Database Systems Internals",
+        link: "https://courses.cs.washington.edu/courses/cse444/"
+    },
+    {
+        title: "CSE 444",
+        name: "Database Systems Internals",
+        link: "https://courses.cs.washington.edu/courses/cse444/"
+    },
+    {
+        title: "CSE 481",
+        name: "Capstone Software Designs",
+        link: "https://courses.cs.washington.edu/courses/cse481v/26wi/"
+    },
 ];
 
 
@@ -34956,7 +34981,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
         super(props);
         this.renderProjectList = () => {
             const projList = projectsData.map((project, index) => {
-                return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "project-card", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: 'project-title', children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: 'project-description', children: project.description }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: project.link, target: "_blank", rel: "noopener noreferrer", className: 'link', children: "View Project" })] }, index));
+                return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "project-card", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: 'project-title', children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: 'project-description', children: project.description }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", { href: project.link, target: "_blank", rel: "noopener noreferrer", className: 'link', children: "(project.linkText)" })] }, index));
             });
             return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: 'projects-grid', children: projList });
         };
@@ -34970,6 +34995,18 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 }
 const projectsData = [
     {
+        title: "Tic Tac Toe",
+        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
+        link: "https://github.com/ramon-rcp/tictactoe",
+        linkText: "View Github"
+    },
+    {
+        title: "Hearth & Horde Lockdown",
+        description: "Hearth & Horde Lockdown is an AR/VR wave-defense survival game where players can change their space in their very own home base. With fast paced combat and base building management, the game helps players learn how to arrange, defend, and upgrade spaces to survive. Developed for CSE 481 coursework.",
+        link: "https://youtu.be/Tbk7C_Mrjfs?si=NIL5qhd23fv9KjXI",
+        linkText: "View Gameplay"
+    },
+    {
         title: "WeddingApp",
         description: "This is a client-server web app for managing wedding RSVPs, featuring guest list management, detailed guest info, and persistent data storage. Developed for CSE 331 coursework.",
         link: "https://github.com/ramon-rcp/WeddingRsvp/tree/main",
@@ -34977,7 +35014,7 @@ const projectsData = [
     },
     {
         title: "DUET",
-        description: "DUET is a Flutter-based app that connects users through shared music interests, offering Spotify-based matching, concert recommendations, and real-time chat via Firebase. It fosters connections through shared experiences.",
+        description: "DUET is a Flutter-based app that connects users through shared music interests, offering Spotify-based matching, concert recommendations, and real-time chat via Firebase. It fosters connections through shared experiences. Developed for CSE 403 coursework.",
         link: "https://github.com/ramon-rcp/DUET",
         linkText: "View Github"
     },
@@ -34992,11 +35029,6 @@ const projectsData = [
         description: "Simplified version of the classic Frogger game using SystemVerilog and an FPGA development board. The goal is to help a frog safely cross a busy road filled with cars — perfect for training wildlife! Developed for CSE 369 coursework.",
         link: "https://github.com/ramon-rcp/Frogger",
         linkText: "View Github"
-    },
-    {
-        title: "Tic Tac Toe",
-        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
-        link: "https://github.com/ramon-rcp/tictactoe"
     },
     {
         title: "Viking Axe",
@@ -35173,4 +35205,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK
 
 /******/ })()
 ;
-//# sourceMappingURL=main.ff9a84f63654b8eb4f33.js.map
+//# sourceMappingURL=main.5399a5356ecc17975f04.js.map
