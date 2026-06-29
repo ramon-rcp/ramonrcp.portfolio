@@ -35200,7 +35200,7 @@ const skillsList = [
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -35230,4 +35230,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK
 
 /******/ })()
 ;
-//# sourceMappingURL=main.6451edf00e5176e52eec.js.map
+//# sourceMappingURL=main.2f0b65c75a2afb903faa.js.map
