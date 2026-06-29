@@ -70,7 +70,7 @@ const config = {
   output: {
     filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: './'
   },
 
   plugins: [
