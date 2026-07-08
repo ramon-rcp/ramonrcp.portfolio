@@ -97,8 +97,7 @@ class Hero extends Component<{}, {}> {
                     Hi, I'm <span className="text-[#3182ce]">Ramon Costa</span>
                     </h1>
                     <p className="text-xl text-[#718096] mb-10 max-w-2xl leading-relaxed">
-                    (dis is so long lol) Hi! I’m Ramon Costa-Patel, a recent Computer Engineering graduate at the University of Washington with a passion for building impactful software and exploring the edges of tech. Whether I’m deploying Linux labs across campus or designing full-stack apps with React or Flutter, I’m always looking for ways to connect technology with real human experiences.
-                    Outside of engineering, I’m a huge fan of soccer (Visca el Barça!), love playing basketball, and can get lost in a great video game for hours (such as Elden Ring). I’m especially drawn to the intersection of creativity and logic, whether it’s crafting an intuitive user interface or debugging low-level hardware code.
+                    I'm a recent Computer Engineering graduate from the University of Washington, passionate about building impactful software across the stack. From deploying Linux labs to designing full-stack apps with React and Flutter, I enjoy turning technical challenges into intuitive, real-world solutions.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                     <a href="#projects" className="bg-[#3182ce] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2b6cb0] transition-custom shadow-lg shadow-blue-500/20">
