@@ -24,6 +24,7 @@ export class App extends Component<{}, {}> {
                 <Skills/>
                 <Resume/>
                 <Courses/>
+                <Contact/>
                 <footer className="footer">
       © 2025 Ramon Costa-Patel. All rights reserved.
     </footer>
@@ -135,6 +136,38 @@ class Resume extends Component<{}, {}> {
                     <p className="mt-4 text-xs text-[#718096] font-medium">
                     Last updated: June 2026
                     </p>
+                </div>
+                </div>
+            </section>
+        )
+    }
+}
+
+class Contact extends Component<{}, {}> {
+    constructor(props: {}) {
+        super(props);
+    }
+
+    render() {
+        return (
+             <section id="contact" className="py-24 bg-[#2d3748] text-white">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                <h2 className="text-4xl lg:text-5xl font-bold mb-8 tracking-tight">Ready for the next challenge.</h2>
+                <p className="text-gray-400 text-xl mb-12 max-w-2xl mx-auto">
+                    I'm currently available for full-time engineering roles or freelance collaborations. Let's discuss how I can help your team.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="mailto:ramoncostapatel@gmail.com" className="bg-[#3182ce] text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#2b6cb0] transition-custom shadow-xl shadow-black/20">
+                    Send an Email
+                    </a>
+                    <div className="flex items-center space-x-6">
+                    <a href="https://github.com/ramon-rcp" className="text-white hover:text-[#3182ce] transition-custom text-3xl">
+                        <iconify-icon icon="mdi:github"></iconify-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ramon-r-costa-ab88b323b/" className="text-white hover:text-[#3182ce] transition-custom text-3xl">
+                        <iconify-icon icon="mdi:linkedin"></iconify-icon>
+                    </a>
+                    </div>
                 </div>
                 </div>
             </section>
