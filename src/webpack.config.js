@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const info = {
@@ -47,7 +46,8 @@ const config = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       },
       {
@@ -70,13 +70,12 @@ const config = {
   output: {
     filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: './'
+    publicPath: '/'
   },
 
   plugins: [
     new ProgressBarPlugin({ width: 80 }),
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin(["src/img/*"]),
     new MiniCssExtractPlugin({ filename: '[contenthash].css' }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
