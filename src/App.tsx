@@ -20,7 +20,6 @@ export class App extends Component<{}, {}> {
             <div className="min-h-screen">
                 <Header/>
                 <Hero />
-                <About/>
                 <Projects/>
                 <Skills/>
                 <Courses/>
@@ -110,24 +109,6 @@ class Hero extends Component<{}, {}> {
                 </div>
                 </div>
             </section>
-        );
-    }
-}
-
-class About extends Component<{}, {}> {
-    constructor(props: {}) {
-        super(props);
-    }
-
-    render() {
-        return (
-            <section className="about" id="about">
-            <div className="container">
-                <h2 className="about-title">About Me</h2>
-                <p>Hi! I’m Ramon Costa-Patel, a Computer Engineering student at the University of Washington with a passion for building impactful software and exploring the edges of tech. Whether I’m deploying Linux labs across campus or designing full-stack apps with React or Flutter, I’m always looking for ways to connect technology with real human experiences.</p>
-                <p>Outside of engineering, I’m a huge fan of soccer (Visca el Barça!), love playing basketball, and can get lost in a great video game for hours (such as Elden Ring). I’m especially drawn to the intersection of creativity and logic, whether it’s crafting an intuitive user interface or debugging low-level hardware code.</p>
-            </div>
-        </section>
         );
     }
 }
