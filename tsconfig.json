@@ -12,5 +12,6 @@
     "rootDir": "src",
     "sourceMap": true,
     "verbatimModuleSyntax": true
-  }
+  },
+  "include": ["src", "types"]
 }
