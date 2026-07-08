@@ -22,6 +22,7 @@ export class App extends Component<{}, {}> {
                 <Hero />
                 <Projects/>
                 <Skills/>
+                <Resume/>
                 <Courses/>
                 <footer className="footer">
       © 2025 Ramon Costa-Patel. All rights reserved.
@@ -110,5 +111,33 @@ class Hero extends Component<{}, {}> {
                 </div>
             </section>
         );
+    }
+}
+
+class Resume extends Component<{}, {}> {
+    constructor(props: {}) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <section id="resume" className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#2d3748]">My Resume</h2>
+                <p className="text-[#718096] max-w-2xl mx-auto text-lg mb-10">
+                    For a detailed overview of my professional experience and education, please view my full resume below.
+                </p>
+                <div className="flex flex-col items-center">
+                    <a href={resume} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-[#3182ce] text-white rounded-md font-bold text-lg hover:bg-[#2b6cb0] transition-custom shadow-lg shadow-blue-500/10">
+                    <iconify-icon icon="lucide:external-link" className="mr-2"></iconify-icon>
+                    View Resume
+                    </a>
+                    <p className="mt-4 text-xs text-[#718096] font-medium">
+                    Last updated: June 2026
+                    </p>
+                </div>
+                </div>
+            </section>
+        )
     }
 }
