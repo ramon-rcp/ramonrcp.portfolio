@@ -57,7 +57,7 @@ export class Courses extends Component<{}, {showAll: boolean}> {
 }
 
 const iconsList : string[] = [
-    "award", "box", "component", "cloud", "layers", "terminal"
+    "award", "box", "component", "cloud", "layers", "terminal", "wrench", "cpu", "code", "book", "server", "git-branch", "git-commit", "git-merge", "git-pull-request"
 ]
 
 const courseList: {title: string, name: string, link: string, quarter: string}[] = [
