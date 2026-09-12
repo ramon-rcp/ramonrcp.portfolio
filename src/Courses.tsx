@@ -15,7 +15,6 @@ export class Courses extends Component<{}, {showAll: boolean}> {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]">Courses</h2>
-                    <p className="text-[#718096] max-w-2xl mx-auto text-lg">add words here idk</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {this.renderCourses()}
