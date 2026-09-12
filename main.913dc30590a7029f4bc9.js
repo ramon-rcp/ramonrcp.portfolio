@@ -34963,7 +34963,7 @@ class Courses extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
         };
     }
     render() {
-        return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", { id: "courses", className: "bg-white py-24 border-t border-gray-100", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "max-w-7xl mx-auto px-6", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "text-center mb-16", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: "text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]", children: "Courses" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "text-[#718096] max-w-2xl mx-auto text-lg", children: "add words here idk" })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: this.renderCourses() }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "flex justify-center mt-12", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", { id: "view-more-courses-btn", onClick: this.toggleShowAll, className: "flex items-center space-x-2 text-[#3182ce] font-bold hover:translate-y-1 transition-transform", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { children: this.state.showAll ? "View Less Courses" : "View More Courses" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iconify-icon", { icon: this.state.showAll ? "lucide:arrow-up" : "lucide:arrow-right" })] }) })] }) });
+        return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", { id: "courses", className: "bg-white py-24 border-t border-gray-100", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "max-w-7xl mx-auto px-6", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "text-center mb-16", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: "text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]", children: "Courses" }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: this.renderCourses() }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "flex justify-center mt-12", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", { id: "view-more-courses-btn", onClick: this.toggleShowAll, className: "flex items-center space-x-2 text-[#3182ce] font-bold hover:translate-y-1 transition-transform", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { children: this.state.showAll ? "View Less Courses" : "View More Courses" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iconify-icon", { icon: this.state.showAll ? "lucide:arrow-up" : "lucide:arrow-right" })] }) })] }) });
     }
 }
 const iconsList = [
@@ -35085,21 +35085,44 @@ __webpack_require__.r(__webpack_exports__);
 class Projects extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     constructor(props) {
         super(props);
+        this.getAllSkills = () => {
+            const counts = new Map();
+            projectsData.forEach((project) => (project.skills || []).forEach((skill) => counts.set(skill, (counts.get(skill) || 0) + 1)));
+            return Array.from(counts.entries())
+                .filter((entry) => entry[1] >= 2)
+                .map((entry) => entry[0])
+                .sort();
+        };
+        this.renderFilterBar = () => {
+            const pillClass = (active) => `px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${active ? "bg-[#3182ce] text-white" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`;
+            return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "flex flex-wrap justify-center gap-2 mb-12", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { className: pillClass(this.state.selectedSkill === null), onClick: () => this.setState({ selectedSkill: null }), children: "All" }), this.getAllSkills().map((skill) => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", { className: pillClass(this.state.selectedSkill === skill), onClick: () => this.setState({ selectedSkill: skill }), children: skill }, skill)))] }));
+        };
+        this.renderProjectCard = (project, index, featured) => {
+            return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: `project-card bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm flex flex-col ${featured ? "border-[#3182ce]/30 shadow-md" : ""}`, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "p-8 flex-grow", children: [featured && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { className: "inline-block mb-3 px-2.5 py-1 bg-[#3182ce]/10 text-[#3182ce] text-xs font-bold uppercase tracking-wide rounded", children: "Featured" })), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: `font-bold mb-3 text-[#2d3748] ${featured ? "text-2xl" : "text-xl"}`, children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "text-[#718096] mb-6 line-clamp-none leading-relaxed", children: project.description }), this.renderSkillsList(project.skills || []), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", { href: project.link, className: "inline-flex items-center text-[#3182ce] font-bold hover:underline", children: [project.linkText, (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iconify-icon", { icon: "lucide:external-link", className: "ml-2 text-sm" })] })] }) }, index));
+        };
+        this.renderFeaturedProject = () => {
+            const featuredIndex = projectsData.findIndex((project) => project.featured);
+            if (featuredIndex === -1) {
+                return null;
+            }
+            return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "mb-8", children: this.renderProjectCard(projectsData[featuredIndex], featuredIndex, true) }));
+        };
         this.renderProjectList = () => {
-            const projList = projectsData.map((project, index) => {
-                return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "project-card bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm flex flex-col", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "p-8 flex-grow", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", { className: "text-xl font-bold mb-3 text-[#2d3748]", children: project.title }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "text-[#718096] mb-6 line-clamp-none leading-relaxed", children: project.description }), this.renderSkillsList(project.skills || []), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", { href: project.link, className: "inline-flex items-center text-[#3182ce] font-bold hover:underline", children: [project.linkText, (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("iconify-icon", { icon: "lucide:external-link", className: "ml-2 text-sm" })] })] }) }, index));
-            });
-            return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: projList });
+            const selectedSkill = this.state.selectedSkill;
+            const visibleProjects = projectsData
+                .map((project, index) => ({ project, index }))
+                .filter((entry) => (selectedSkill === null ? !entry.project.featured : (entry.project.skills || []).includes(selectedSkill)));
+            return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: visibleProjects.map((entry) => this.renderProjectCard(entry.project, entry.index)) });
         };
         this.renderSkillsList = (skills) => {
             return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "flex flex-wrap gap-2 mb-8", children: skills.map((skill, index) => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { className: "px-2.5 py-1 bg-gray-50 text-xs font-medium text-gray-600 rounded", children: skill }, index))) }));
         };
         this.state = {
-            show: "about"
+            selectedSkill: null
         };
     }
     render() {
-        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", { id: "projects", className: "bg-white py-24", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "max-w-7xl mx-auto px-6", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "text-center mb-16", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: "text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]", children: "Featured Projects" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "text-[#718096] max-w-2xl mx-auto text-lg", children: "A selection of my recent projects." })] }), this.renderProjectList()] }) }));
+        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("section", { id: "projects", className: "bg-white py-24", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "max-w-7xl mx-auto px-6", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "text-center mb-16", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", { className: "text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]", children: "Featured Projects" }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", { className: "text-[#718096] max-w-2xl mx-auto text-lg", children: "A selection of my recent projects." })] }), this.renderFilterBar(), this.state.selectedSkill === null && this.renderFeaturedProject(), this.renderProjectList()] }) }));
     }
 }
 const projectsData = [
@@ -35118,11 +35141,19 @@ const projectsData = [
         skills: ["Unity", "C#", "Meta Oculus", "VR", "AR"]
     },
     {
+        title: "Desert Mouse",
+        description: "This is a top-down survival roguelite. Enemies close in from every angle: move, aim, and shoot to stay alive as long as you can. Every enemy you drop leaves coins behind, and every run (win or lose) banks that gold toward your next attempt.",
+        link: "https://ramonrcp.itch.io/desert-mouse",
+        linkText: "View Game",
+        skills: ["Unity", "C#", "Claude Code"]
+    },
+    {
         title: "DUET",
         description: "DUET is a Flutter-based app that connects users through shared music interests, offering Spotify-based matching, concert recommendations, and real-time chat via Firebase. It fosters connections through shared experiences. Developed for CSE 403 coursework.",
         link: "https://github.com/ramon-rcp/DUET",
         linkText: "Github Repository",
-        skills: ["Flutter", "Dart", "Firebase"]
+        skills: ["Flutter", "Dart", "Firebase"],
+        featured: true
     },
     {
         title: "FlightApp",
@@ -35144,13 +35175,6 @@ const projectsData = [
         link: "https://github.com/ramon-rcp/Frogger",
         linkText: "Github Repository",
         skills: ["SystemVerilog", "FPGA"]
-    },
-    {
-        title: "Viking Axe",
-        description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
-        link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642",
-        linkText: "Sketchfab Model",
-        skills: ["Blender", "Maya", "Substance Painter"]
     },
 ];
 
@@ -35377,4 +35401,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_App__WEBPACK
 
 /******/ })()
 ;
-//# sourceMappingURL=main.4b24b2582782e0fa2332.js.map
+//# sourceMappingURL=main.913dc30590a7029f4bc9.js.map
