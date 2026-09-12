@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import "./global.css"
 
-export class Projects extends Component<{}, {}> {
+type Project = {
+    title: string;
+    description: string;
+    link: string;
+    linkText: string;
+    skills: string[];
+    featured?: boolean;
+};
+
+type ProjectsState = {
+    selectedSkill: string | null;
+};
+
+export class Projects extends Component<{}, ProjectsState> {
     constructor(props: {}) {
         super(props);
         this.state = {
-            show: "about"
+            selectedSkill: null
         };
     }
 
@@ -17,30 +30,81 @@ export class Projects extends Component<{}, {}> {
                         <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#2d3748]">Featured Projects</h2>
                         <p className="text-[#718096] max-w-2xl mx-auto text-lg">A selection of my recent projects.</p>
                     </div>
+                    {this.renderFilterBar()}
+                    {this.state.selectedSkill === null && this.renderFeaturedProject()}
                     {this.renderProjectList()}
                 </div>
           </section>
         );
     }
 
-    renderProjectList = (): React.ReactElement => {
-        const projList: React.ReactElement[] = projectsData.map((project, index) => {
-            return (
-                <div key={index} className="project-card bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm flex flex-col">
-                    <div className="p-8 flex-grow">
-                        <h3 className="text-xl font-bold mb-3 text-[#2d3748]">{project.title}</h3>
-                        <p className="text-[#718096] mb-6 line-clamp-none leading-relaxed">{project.description}</p>
-                        {this.renderSkillsList(project.skills || [])}
-                        <a href={project.link} className="inline-flex items-center text-[#3182ce] font-bold hover:underline">
-                            {project.linkText}
-                            <iconify-icon icon="lucide:external-link" className="ml-2 text-sm"></iconify-icon>
-                        </a>
-                    </div>
+    getAllSkills = (): string[] => {
+        const counts = new Map<string, number>();
+        projectsData.forEach((project) => (project.skills || []).forEach((skill) => counts.set(skill, (counts.get(skill) || 0) + 1)));
+        return Array.from(counts.entries())
+            .filter((entry) => entry[1] >= 2)
+            .map((entry) => entry[0])
+            .sort();
+    }
+
+    renderFilterBar = (): React.ReactElement => {
+        const pillClass = (active: boolean) =>
+            `px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${active ? "bg-[#3182ce] text-white" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`;
+        return (
+            <div className="flex flex-wrap justify-center gap-2 mb-12">
+                <button className={pillClass(this.state.selectedSkill === null)} onClick={() => this.setState({ selectedSkill: null })}>
+                    All
+                </button>
+                {this.getAllSkills().map((skill) => (
+                    <button key={skill} className={pillClass(this.state.selectedSkill === skill)} onClick={() => this.setState({ selectedSkill: skill })}>
+                        {skill}
+                    </button>
+                ))}
+            </div>
+        );
+    }
+
+    renderProjectCard = (project: Project, index: number, featured?: boolean): React.ReactElement => {
+        return (
+            <div key={index} className={`project-card bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm flex flex-col ${featured ? "border-[#3182ce]/30 shadow-md" : ""}`}>
+                <div className="p-8 flex-grow">
+                    {featured && (
+                        <span className="inline-block mb-3 px-2.5 py-1 bg-[#3182ce]/10 text-[#3182ce] text-xs font-bold uppercase tracking-wide rounded">
+                            Featured
+                        </span>
+                    )}
+                    <h3 className={`font-bold mb-3 text-[#2d3748] ${featured ? "text-2xl" : "text-xl"}`}>{project.title}</h3>
+                    <p className="text-[#718096] mb-6 line-clamp-none leading-relaxed">{project.description}</p>
+                    {this.renderSkillsList(project.skills || [])}
+                    <a href={project.link} className="inline-flex items-center text-[#3182ce] font-bold hover:underline">
+                        {project.linkText}
+                        <iconify-icon icon="lucide:external-link" className="ml-2 text-sm"></iconify-icon>
+                    </a>
                 </div>
-            );
-        })
+            </div>
+        );
+    }
+
+    renderFeaturedProject = (): React.ReactElement | null => {
+        const featuredIndex = projectsData.findIndex((project) => project.featured);
+        if (featuredIndex === -1) {
+            return null;
+        }
+        return (
+            <div className="mb-8">
+                {this.renderProjectCard(projectsData[featuredIndex], featuredIndex, true)}
+            </div>
+        );
+    }
+
+    renderProjectList = (): React.ReactElement => {
+        const selectedSkill = this.state.selectedSkill;
+        const visibleProjects = projectsData
+            .map((project, index) => ({ project, index }))
+            .filter((entry) => (selectedSkill === null ? !entry.project.featured : (entry.project.skills || []).includes(selectedSkill)));
+
         return <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projList}
+            {visibleProjects.map((entry) => this.renderProjectCard(entry.project, entry.index))}
         </div>
     }
 
@@ -58,7 +122,7 @@ export class Projects extends Component<{}, {}> {
 }
 
 
-const projectsData = [
+const projectsData: Project[] = [
     {
         title: "Tic Tac Toe",
         description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
@@ -74,11 +138,19 @@ const projectsData = [
         skills: ["Unity", "C#", "Meta Oculus", "VR", "AR"]
     },
     {
+        title: "Desert Mouse",
+        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
+        link: "https://github.com/ramon-rcp/tictactoe",
+        linkText: "View Game",
+        skills: ["Unity", "C#", "Claude Code"]
+    },
+    {
         title: "DUET",
         description: "DUET is a Flutter-based app that connects users through shared music interests, offering Spotify-based matching, concert recommendations, and real-time chat via Firebase. It fosters connections through shared experiences. Developed for CSE 403 coursework.",
         link: "https://github.com/ramon-rcp/DUET",
         linkText: "Github Repository",
-        skills: ["Flutter", "Dart", "Firebase"]
+        skills: ["Flutter", "Dart", "Firebase"],
+        featured: true
     },
     {
         title: "FlightApp",
@@ -100,12 +172,5 @@ const projectsData = [
         link: "https://github.com/ramon-rcp/Frogger",
         linkText: "Github Repository",
         skills: ["SystemVerilog", "FPGA"]
-    },
-    {
-        title: "Viking Axe",
-        description: "Weathered viking-style axe with engraved design on the blade, leather grip, wooden handle, and an engraved rune on the handle. Made with Maya and Substance Painter.",
-        link: "https://sketchfab.com/3d-models/viking-axe-56c388492b71441f844ef3a3e2ca5642",
-        linkText: "Sketchfab Model",
-        skills: ["Blender", "Maya", "Substance Painter"]
     },
 ]
