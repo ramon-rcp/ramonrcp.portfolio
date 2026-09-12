@@ -139,8 +139,8 @@ const projectsData: Project[] = [
     },
     {
         title: "Desert Mouse",
-        description: "This is a simple Tic Tac Toe game built with React and TypeScript. The game allows a player and an ai to take turns marking the squares in a 3x3 grid with 'X' and 'O'. The first player to align three of their marks horizontally, vertically, or diagonally wins the game",
-        link: "https://github.com/ramon-rcp/tictactoe",
+        description: "This is a top-down survival roguelite. Enemies close in from every angle: move, aim, and shoot to stay alive as long as you can. Every enemy you drop leaves coins behind, and every run (win or lose) banks that gold toward your next attempt.",
+        link: "https://ramonrcp.itch.io/desert-mouse",
         linkText: "View Game",
         skills: ["Unity", "C#", "Claude Code"]
     },
